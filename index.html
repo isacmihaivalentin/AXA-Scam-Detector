@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ro" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXA Scam Detector — AI & OSINT Phishing Forensics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0b0f19; color: #e2e8f0; font-family: 'Inter', system-ui, sans-serif; }
+    .glass { background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .highlight-chip {
+      background: rgba(239, 68, 68, 0.22);
+      border-bottom: 2px solid #ef4444;
+      color: #fca5a5;
+      padding: 1px 4px;
+      border-radius: 4px;
+      cursor: help;
+      transition: all 0.15s ease;
+    }
+    .highlight-chip:hover { background: rgba(239, 68, 68, 0.4); }
+  </style>
+</head>
+<body class="min-h-screen pb-16">
+
+  <!-- Top Navbar -->
+  <header class="border-b border-slate-800 bg-slate-950/80 sticky top-0 z-30 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center font-bold text-white shadow-lg shadow-red-500/20">
+          SA
+        </div>
+        <div>
+          <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+            AXA Scam Detector <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-red-500/15 text-red-400 border border-red-500/30">Cybersecurity + XAI</span>
+          </h1>
+          <p class="text-xs text-slate-400">Deconstructie psihologica & investigatie tehnica OSINT pentru mesaje suspecte</p>
+        </div>
+      </div>
+
+      <!-- Optional Gemini API Key Input -->
+      <div class="flex items-center gap-2">
+        <input id="apiKeyInput" type="password" placeholder="Gemini API Key (optional pt. AI/OCR)"
+          class="text-xs bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-200 focus:outline-none focus:border-red-500 w-64" />
+        <span class="text-[11px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1.5 rounded-lg">
+          Engine Local + OSINT Activ
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- Left Column: Input & Presets -->
+    <section class="lg:col-span-5 space-y-5">
+      <div class="glass rounded-2xl p-5 shadow-xl">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-300">1. Introdu Mesajul Suspect</h2>
+          <span class="text-xs text-slate-400">SMS / WhatsApp / Email</span>
+        </div>
+
+        <!-- Demo Presets -->
+        <div class="mb-3">
+          <p class="text-xs text-slate-400 mb-2">Scenarii rapide pentru Demo Juriu:</p>
+          <div class="grid grid-cols-2 gap-2">
+            <button onclick="loadPreset(0)" class="text-left text-xs px-3 py-2 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
+              📦 SMS Curier (Sameday)
+            </button>
+            <button onclick="loadPreset(1)" class="text-left text-xs px-3 py-2 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
+              🏦 Phishing Banca (BCR)
+            </button>
+            <button onclick="loadPreset(2)" class="text-left text-xs px-3 py-2 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
+              🛒 Frauda OLX / WhatsApp
+            </button>
+            <button onclick="loadPreset(3)" class="text-left text-xs px-3 py-2 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-emerald-300 transition">
+              ✅ Mesaj Legitim (Safe)
+            </button>
+          </div>
+        </div>
+
+        <textarea id="messageInput" rows="6"
+          class="w-full rounded-xl bg-slate-950/90 border border-slate-700/80 p-3.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-red-500 transition"
+          placeholder="Lipeste aici mesajul SMS, emailul sau link-ul suspect..."></textarea>
+
+        <div class="mt-4 flex flex-col sm:flex-row gap-3">
+          <button id="analyzeBtn" onclick="analyzeText()"
+            class="flex-1 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 text-white font-semibold py-2.5 px-4 rounded-xl shadow-lg shadow-red-600/25 transition flex items-center justify-center gap-2 text-sm">
+            <span>🔍 Porneste Autopsia Mesajului</span>
+          </button>
+
+          <label class="cursor-pointer bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 text-xs font-medium py-2.5 px-3.5 rounded-xl flex items-center justify-center gap-1.5 transition">
+            <span>📷 Incarca Screenshot</span>
+            <input id="imageInput" type="file" accept="image/*" class="hidden" onchange="analyzeImage()" />
+          </label>
+        </div>
+      </div>
+
+      <!-- How it works card for Jury -->
+      <div class="glass rounded-2xl p-5 space-y-3">
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400">Arhitectura de Verificare in 4 Straturi</h3>
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-semibold text-red-400 mb-1">1. Social Engineering XAI</div>
+            <p class="text-slate-400">Evidentiaza exact expresiile care exploateaza frica, urgenta sau autoritatea.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-semibold text-orange-400 mb-1">2. Anti-Typosquatting</div>
+            <p class="text-slate-400">Distanta Levenshtein & normalizare leetspeak fata de banci, curieri si institutii RO.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-semibold text-amber-400 mb-1">3. Unshortener & WHOIS</div>
+            <p class="text-slate-400">Deconspira link-urile bit.ly si verifica vechimea domeniului si extensia TLD.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
+            <div class="font-semibold text-emerald-400 mb-1">4. Inspectie Formulare</div>
+            <p class="text-slate-400">Scaneaza codul destinatiei pentru a detecta formulare false de card sau parola.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: Forensic Report -->
+    <section class="lg:col-span-7 space-y-5">
+
+      <!-- Empty State -->
+      <div id="emptyState" class="glass rounded-2xl p-12 text-center border-dashed border-2 border-slate-800">
+        <div class="text-4xl mb-3">🛡️</div>
+        <h3 class="text-base font-semibold text-slate-200">Nicio analiza activa</h3>
+        <p class="text-xs text-slate-400 max-w-md mx-auto mt-1">
+          Selecteaza unul dintre scenariile demo din stanga sau lipeste un mesaj pentru a vedea deconstructia psihologica si raportul tehnic al link-urilor.
+        </p>
+      </div>
+
+      <!-- Results Container -->
+      <div id="resultsContainer" class="hidden space-y-5">
+
+        <!-- Score & Verdict Banner -->
+        <div class="glass rounded-2xl p-5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+            <div>
+              <span id="engineBadge" class="text-[11px] font-mono uppercase px-2 py-0.5 rounded bg-slate-800 text-slate-400"></span>
+              <h2 id="verdictTitle" class="text-xl font-bold mt-1"></h2>
+              <p id="verdictSummary" class="text-xs text-slate-300 mt-1"></p>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-950 px-4 py-3 rounded-2xl border border-slate-800 shrink-0">
+              <div class="text-right">
+                <div class="text-[10px] uppercase tracking-wider text-slate-400">Scor de Risc</div>
+                <div id="riskScoreValue" class="text-3xl font-extrabold">0/100</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tactics Badges -->
+          <div class="mt-4">
+            <div class="text-xs text-slate-400 mb-2">Tehnici de manipulare detectate:</div>
+            <div id="tacticsList" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <!-- Annotated Message (XAI Deconstruction) -->
+        <div class="glass rounded-2xl p-5">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-2">
+            2. Autopsia Textului (Expresii Manipulative Evidentiate)
+          </h3>
+          <div id="annotatedText" class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-sm leading-relaxed whitespace-pre-wrap"></div>
+
+          <!-- Detailed Explanations List -->
+          <div id="highlightsList" class="mt-4 space-y-2"></div>
+        </div>
+
+        <!-- URL & Domain Forensics -->
+        <div class="glass rounded-2xl p-5">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-3">
+            3. Investigatie Tehnica Link-uri & Domenii (OSINT)
+          </h3>
+          <div id="urlReportsContainer" class="space-y-3"></div>
+        </div>
+
+        <!-- Actionable Recommendations -->
+        <div class="glass rounded-2xl p-5">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-emerald-400 mb-2">
+            4. Ce trebuie sa faci acum (Recomandari de Securitate)
+          </h3>
+          <ul id="recommendationsList" class="space-y-1.5 text-xs text-slate-200 list-disc list-inside"></ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const PRESETS = [
+      `SAMEDAY: Coletul dvs. RO492819 nu a putut fi livrat din cauza unei adrese incomplete. Actualizati datele in maxim 24 de ore pentru a evita returnarea si plata unei taxe de depozitare: https://sameday-livrare-ro.top/tracking`,
+      `ALERTA BCR: Contul dvs. George a fost suspendat temporar in urma unei tranzactii suspecte. Pentru deblocare imediata si evitarea blocarii cardului, validati identitatea aici: http://bcr-verifica-cont.xyz/login`,
+      `Buna! Am vazut anuntul tau pe OLX si am achitat deja produsul prin livrare cu verificare. Intra pe linkul generat de curier ca sa iti introduci datele cardului si codul CVV pentru a incasa banii imediat: https://o1x-plata-sigura.online/incasare`,
+      `Salut! Comanda ta eMAG #4029182 a fost predata curierului si va fi livrata astazi. Poti vedea statusul comenzii direct in aplicatia ta sau pe https://www.emag.ro.`
+    ];
+
+    function loadPreset(idx) {
+      document.getElementById('messageInput').value = PRESETS[idx];
+      analyzeText();
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+    }
+
+    async function analyzeText() {
+      const text = document.getElementById('messageInput').value.trim();
+      const apiKey = document.getElementById('apiKeyInput').value.trim();
+      if (!text) return;
+
+      const btn = document.getElementById('analyzeBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<span>⏳ Se scaneaza link-urile si textul...</span>';
+
+      try {
+        const res = await fetch('/api/analyze', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text, api_key: apiKey })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || 'Eroare la analiza');
+        renderResults(data);
+      } catch (err) {
+        alert(err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<span>🔍 Porneste Autopsia Mesajului</span>';
+      }
+    }
+
+    async function analyzeImage() {
+      const fileInput = document.getElementById('imageInput');
+      const apiKey = document.getElementById('apiKeyInput').value.trim();
+      if (!fileInput.files.length) return;
+
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+      if (apiKey) formData.append('api_key', apiKey);
+
+      const btn = document.getElementById('analyzeBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<span>📷 Se extrage textul din Screenshot...</span>';
+
+      try {
+        const res = await fetch('/api/analyze-image', { method: 'POST', body: formData });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || 'Eroare la procesarea imaginii');
+        document.getElementById('messageInput').value = data.text;
+        renderResults(data);
+      } catch (err) {
+        alert(err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<span>🔍 Porneste Autopsia Mesajului</span>';
+        fileInput.value = '';
+      }
+    }
+
+    function renderResults(data) {
+      document.getElementById('emptyState').classList.add('hidden');
+      document.getElementById('resultsContainer').classList.remove('hidden');
+
+      const { analysis, url_reports, text } = data;
+      const score = analysis.risk_score;
+
+      const scoreEl = document.getElementById('riskScoreValue');
+      const verdictEl = document.getElementById('verdictTitle');
+      scoreEl.textContent = `${score}/100`;
+
+      if (score >= 70) {
+        scoreEl.className = 'text-3xl font-extrabold text-red-500';
+        verdictEl.className = 'text-xl font-bold mt-1 text-red-400';
+      } else if (score >= 35) {
+        scoreEl.className = 'text-3xl font-extrabold text-amber-400';
+        verdictEl.className = 'text-xl font-bold mt-1 text-amber-300';
+      } else {
+        scoreEl.className = 'text-3xl font-extrabold text-emerald-400';
+        verdictEl.className = 'text-xl font-bold mt-1 text-emerald-300';
+      }
+
+      document.getElementById('engineBadge').textContent = analysis.engine_used || 'Forensic Engine';
+      verdictEl.textContent = analysis.verdict;
+      document.getElementById('verdictSummary').textContent = analysis.summary;
+
+      // Tactics
+      const tacticsContainer = document.getElementById('tacticsList');
+      if (analysis.tactics_detected && analysis.tactics_detected.length) {
+        tacticsContainer.innerHTML = analysis.tactics_detected.map(t =>
+          `<span class="text-xs px-2.5 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 font-medium">⚠️ ${escapeHtml(t)}</span>`
+        ).join('');
+      } else {
+        tacticsContainer.innerHTML = `<span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">Fara indicatori de manipulare</span>`;
+      }
+
+      // Highlight text
+      let safeText = escapeHtml(text);
+      const highlights = analysis.highlights || [];
+      highlights.forEach(h => {
+        if (!h.phrase) return;
+        const escapedPhrase = escapeHtml(h.phrase);
+        const regex = new RegExp(escapedPhrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+        safeText = safeText.replace(regex, match =>
+          `<span class="highlight-chip" title="${escapeHtml(h.category + ': ' + h.explanation)}">${match}</span>`
+        );
+      });
+      document.getElementById('annotatedText').innerHTML = safeText;
+
+      // Detailed explanations
+      const hlList = document.getElementById('highlightsList');
+      hlList.innerHTML = highlights.map(h => `
+        <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+          <div>
+            <span class="font-semibold text-red-400">[${escapeHtml(h.category)}]</span>
+            <span class="font-mono bg-slate-950 px-1.5 py-0.5 rounded text-slate-200 mx-1">"${escapeHtml(h.phrase)}"</span>
+            <p class="text-slate-400 mt-1">${escapeHtml(h.explanation)}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // URL Reports
+      const urlContainer = document.getElementById('urlReportsContainer');
+      if (!url_reports || url_reports.length === 0) {
+        urlContainer.innerHTML = `<div class="text-xs text-slate-400 p-3 rounded-xl bg-slate-900/50 border border-slate-800">Nu au fost detectate link-uri in mesaj.</div>`;
+      } else {
+        urlContainer.innerHTML = url_reports.map(u => {
+          const isDanger = u.risk_points >= 40;
+          const badgeClass = isDanger ? 'bg-red-500/20 text-red-300 border-red-500/40' : 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
+          return `
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 text-xs">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="font-mono text-slate-200 break-all">🔗 ${escapeHtml(u.original_url)}</div>
+                <span class="px-2.5 py-0.5 rounded-full border font-semibold ${badgeClass}">
+                  Risc URL: ${u.risk_points}/100
+                </span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-[11px]">
+                <div class="bg-slate-950 p-2 rounded border border-slate-800">
+                  <div class="text-slate-500">Domeniu Destinatie</div>
+                  <div class="font-mono text-slate-200 truncate">${escapeHtml(u.domain || '-')}</div>
+                </div>
+                <div class="bg-slate-950 p-2 rounded border border-slate-800">
+                  <div class="text-slate-500">Typosquatting / Brand</div>
+                  <div class="font-semibold ${u.typosquatting?.is_typosquatting ? 'text-red-400' : 'text-emerald-400'}">
+                    ${u.typosquatting?.is_typosquatting ? `Clona ${escapeHtml(u.typosquatting.target)} (${u.typosquatting.similarity}%)` : (u.typosquatting?.is_official ? 'Domeniu Oficial' : 'Niciun brand clonat')}
+                  </div>
+                </div>
+                <div class="bg-slate-950 p-2 rounded border border-slate-800">
+                  <div class="text-slate-500">Extensie TLD</div>
+                  <div class="${u.suspicious_tld ? 'text-red-400 font-semibold' : 'text-slate-300'}">
+                    ${u.suspicious_tld ? `Suspect (${escapeHtml(u.tld)})` : 'Standard'}
+                  </div>
+                </div>
+                <div class="bg-slate-950 p-2 rounded border border-slate-800">
+                  <div class="text-slate-500">Protocol HTTPS</div>
+                  <div class="${u.has_https ? 'text-emerald-400' : 'text-amber-400'}">
+                    ${u.has_https ? 'Activ (HTTPS)' : 'Lipsa (HTTP Nesecurizat)'}
+                  </div>
+                </div>
+              </div>
+              <ul class="list-disc list-inside text-slate-300 space-y-1 pt-1">
+                ${(u.flags || []).map(f => `<li>${escapeHtml(f)}</li>`).join('')}
+              </ul>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // Recommendations
+      const recList = document.getElementById('recommendationsList');
+      recList.innerHTML = (analysis.recommendations || []).map(r => `<li>${escapeHtml(r)}</li>`).join('');
+    }
+  </script>
+</body>
+</html>
