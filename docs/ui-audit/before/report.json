@@ -1,0 +1,2613 @@
+{
+ "base": "http://localhost:8765",
+ "note": "MOCK Gemini readings via tools/ui_fixture_server.py; deterministic layers real.",
+ "runs": [
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 320,
+   "overflowX": 34,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:15x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 19,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6811,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 619,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 46,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 1,
+   "controls": 36,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 13199,
+   "errors": []
+  },
+  {
+   "state": "marketing",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 587,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 101,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 1,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 14554,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 113,
+    "action": 738,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 34,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 6,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 14761,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 85,
+    "action": 678,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 203,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 10,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 48,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 18112,
+   "errors": []
+  },
+  {
+   "state": "family",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 142,
+    "action": 766,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 34,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 7,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 45,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 15577,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 675,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 34,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 11466,
+   "errors": []
+  },
+  {
+   "state": "protective",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 587,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 34,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 1,
+   "controls": 35,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 12140,
+   "errors": []
+  },
+  {
+   "state": "badurl",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 675,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 34,
+   "lowContrast": [
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 1,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:168x24",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 35,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 12353,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 423,
+    "action": 1168,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 203,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 7,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 4,
+   "controls": 46,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 17844,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 337,
+    "action": 1046,
+    "recovery": null,
+    "viewport": 700
+   },
+   "overflowX": 46,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:15x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 32,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 12135,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:20x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 19,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5664,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 508,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 36,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 11050,
+   "errors": []
+  },
+  {
+   "state": "marketing",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 508,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 30,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:193x24",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 12128,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 85,
+    "action": 599,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 6,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 3,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 12239,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 85,
+    "action": 601,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 131,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 10,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 48,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 14993,
+   "errors": []
+  },
+  {
+   "state": "family",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 113,
+    "action": 690,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 7,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 4,
+   "controls": 45,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 12861,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 535,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 9374,
+   "errors": []
+  },
+  {
+   "state": "protective",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 540,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 1,
+   "controls": 35,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10059,
+   "errors": []
+  },
+  {
+   "state": "badurl",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 535,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 1,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:168x24",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 35,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10385,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 308,
+    "action": 945,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 131,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 7,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 3,
+   "controls": 46,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 14644,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 279,
+    "action": 849,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 32,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10072,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 768,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 19,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3640,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 768,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 444,
+    "recovery": null,
+    "viewport": 1024
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 3,
+   "controls": 36,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7468,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 768,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 474,
+    "recovery": null,
+    "viewport": 1024
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 10,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 5,
+   "controls": 48,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 9785,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 768,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 427,
+    "recovery": null,
+    "viewport": 1024
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6353,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 1440,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 22,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3186,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 3,
+   "controls": 39,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6329,
+   "errors": []
+  },
+  {
+   "state": "marketing",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:193x24",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6760,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 379,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 6,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 4,
+   "controls": 44,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7205,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 10,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 5,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8286,
+   "errors": []
+  },
+  {
+   "state": "family",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 379,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 7,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 5,
+   "controls": 48,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7497,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 330,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 34,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5338,
+   "errors": []
+  },
+  {
+   "state": "protective",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5851,
+   "errors": []
+  },
+  {
+   "state": "badurl",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 330,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 1,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:168x24",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6048,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 173,
+    "action": 517,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 7,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 5,
+   "controls": 49,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7987,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 173,
+    "action": 468,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 35,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5654,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 1920,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 22,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3186,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 1920,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 1080
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 3,
+   "controls": 39,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6328,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 1920,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 1080
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Puternic",
+     "ratio": 4.33,
+     "size": 14.76
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Conține „@”: destinația reală e după @",
+     "ratio": 4.33,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 10,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 5,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8284,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 1920,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 330,
+    "recovery": null,
+    "viewport": 1080
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 34,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5338,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "dark",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:20x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 19,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5664,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "dark",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 508,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 36,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 11049,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "dark",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 85,
+    "action": 601,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 133,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 6,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 48,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 14988,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "dark",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 56,
+    "action": 535,
+    "recovery": null,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 1,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 9374,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "dark",
+   "w": 1440,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 22,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3186,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "dark",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 3,
+   "controls": 39,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6328,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "dark",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 348,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Avertizează pe cineva",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Redă",
+     "ratio": 4.11,
+     "size": 16.2
+    },
+    {
+     "text": "Momeală",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Presiune",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Cerere",
+     "ratio": 4.11,
+     "size": 14.76
+    },
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 6,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 5,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8284,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "dark",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 65,
+    "action": 330,
+    "recovery": null,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Canal controlat",
+     "ratio": 4.11,
+     "size": 14.76
+    }
+   ],
+   "lowContrastCount": 1,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "hon:22x22"
+   ],
+   "controlsUnder44": 0,
+   "controls": 34,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5338,
+   "errors": []
+  },
+  {
+   "state": "text200-critical",
+   "w": 390,
+   "overflowX": 538,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 25.6
+    }
+   ],
+   "lowContrastCount": 1,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:17x38"
+   ],
+   "controlsUnder44": 0,
+   "controls": 48,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 49963
+  },
+  {
+   "state": "error-server_error",
+   "w": 390,
+   "inputPreserved": true,
+   "err": {
+    "text": "Serverul nu a putut finaliza analiza.",
+    "role": "alert",
+    "focused": "BODY"
+   }
+  },
+  {
+   "state": "error-ocr_fail",
+   "w": 390,
+   "inputPreserved": true,
+   "err": {
+    "text": "Nu am putut citi captura acum. Încearcă din nou sau lipește textul.",
+    "role": "alert",
+    "focused": "BODY"
+   }
+  },
+  {
+   "state": "ocr-done",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    },
+    {
+     "text": "Notă",
+     "ratio": 1.75,
+     "size": 14.4
+    }
+   ],
+   "lowContrastCount": 2,
+   "smallTextCount": 1,
+   "smallText": [
+    {
+     "text": "SCAM DETECTOR",
+     "size": 8.64
+    }
+   ],
+   "smallTargets": [
+    "ocrok:13x13",
+    "INPUT:23x23",
+    "INPUT:23x23",
+    "note:94x24",
+    "hon:20x22"
+   ],
+   "controlsUnder44": 2,
+   "controls": 37,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 11228
+  }
+ ],
+ "keyboard": [
+  "A:Sari la verificare",
+  "A:SCAM DETECTOR",
+  "mn:Meniu",
+  "fm:A−",
+  "fp:A+",
+  "th:Temă",
+  "t",
+  "up:Încarcă o captură",
+  "cl:Șterge",
+  "go:Verifică",
+  "A:Detalii",
+  "BUTTON:Curier",
+  "BUTTON:Bancă",
+  "BUTTON:Anunț online",
+  "BUTTON:Rudă în necaz",
+  "BUTTON:Job cu taxă"
+ ],
+ "motionWhileBusy": []
+}

@@ -1,0 +1,446 @@
+{
+  "warmup_api_ms": 4562.52,
+  "peak_process_mib": 1255.7,
+  "mock_gemini": false,
+  "metrics": {
+    "n": 8,
+    "confusion": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 3,
+      "fn": 0
+    },
+    "critical_credential_recall": 1.0,
+    "credential_n": 2,
+    "scam_recall": 1.0,
+    "scam_precision": 1.0,
+    "false_positive_rate_non_scam": 0.0,
+    "false_positive_rate_protective": 0.0,
+    "protective_n": 1,
+    "macro_f1": 1.0,
+    "inconclusive_rate": 0.0,
+    "gemini_eligible_rate": 0.0,
+    "gemini_requested_rate": 0.0,
+    "median_ms": 676.68,
+    "p95_ms": 1166.76,
+    "local_median_ms": 674.6,
+    "local_p95_ms": 1159.1
+  },
+  "rows": [
+    {
+      "id": "A-family",
+      "group": "brief_changed_phone",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 58,
+      "risk": "suspicious",
+      "alert": true,
+      "assessment": "suspicious",
+      "type": "family_impersonation",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 1166.76,
+      "local_ms": 1159.1,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata",
+        "Presiune de timp sau consecinte",
+        "Posibila impersonare a unei persoane apropiate"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "family_impersonation",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "unavailable_for_call",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "urgency_or_pressure",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "unavailable_for_call",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "B-advance-fee",
+      "group": "brief_transfer_unlock",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 58,
+      "risk": "suspicious",
+      "alert": true,
+      "assessment": "suspicious",
+      "type": "advance_fee",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 1044.31,
+      "local_ms": 1041.3,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata",
+        "Posibila frauda cu plata in avans"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "promise_payout",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "promise_payout",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "rules",
+          "scope": "rule_span"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "C-bank-link",
+      "group": "brief_bank_verification",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 72,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "organization_lookalike",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 552.63,
+      "local_ms": 533.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Identitate pretinsa si link de verificare asemanator"
+      ],
+      "observations": [
+        {
+          "label": "organization_impersonation_claim",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "bcr.ro.login-check.example",
+          "registrable": "login-check.example",
+          "catalog": null
+        }
+      ]
+    },
+    {
+      "id": "D-card-photo",
+      "group": "brief_bank_card_photo",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 621.29,
+      "local_ms": 619.2,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_card_photo",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_card_photo",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "request_card_photo",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "E-discord",
+      "group": "brief_nitro",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": "reward_offer",
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "reward_offer",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 274.61,
+      "local_ms": 272.5,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "reward_offer",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "reward_offer",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "discord.com",
+          "registrable": "discord.com",
+          "catalog": "verified_database"
+        }
+      ]
+    },
+    {
+      "id": "F-commercial",
+      "group": "brief_supplement_ad",
+      "truth": "commercial",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": "commercial_solicitation",
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "commercial_solicitation",
+      "type": "commercial_solicitation",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 528.82,
+      "local_ms": 526.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "commercial_solicitation",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "commercial_solicitation",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "www.pulamare.com",
+          "registrable": "pulamare.com",
+          "catalog": null
+        }
+      ]
+    },
+    {
+      "id": "G-official-url-otp",
+      "group": "brief_bcr_otp",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 732.08,
+      "local_ms": 730.0,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "www.bcr.ro",
+          "registrable": "bcr.ro",
+          "catalog": "verified_database"
+        }
+      ]
+    },
+    {
+      "id": "BCR-protective",
+      "group": "brief_bcr_warning",
+      "truth": "benign",
+      "credential": false,
+      "protective": true,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "protective_or_educational",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 753.4,
+      "local_ms": 751.4,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "organization_impersonation_claim",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "protective_warning",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "protective_warning",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "protective_warning",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    }
+  ]
+}

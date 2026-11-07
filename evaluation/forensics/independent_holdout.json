@@ -1,0 +1,354 @@
+[
+  {
+    "id": "IH-001",
+    "group": "cancel_payment_callback_warning",
+    "text": "Dacă te mai sună persoana cu «îmi zici cifrele din SMS și îți anulez plata», închide. Mesajul autorizează chiar plata. Intră din iconița băncii pe care o ai deja și verifică acolo tranzacția. Nici mie nu-mi dicta cifrele.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "IH-002",
+    "group": "ticket_resale_payout_confirmation",
+    "text": "Hei, am luat biletul de la tine. Plata mea e deja în așteptare. Ca să-ți intre 210 lei, confirmă cardul pe https://primire-bilet.test/incasare: nr complet, expirarea, CVC-ul de pe spate și codu din sms. Nu te speria dacă scrie «confirmă plata», așa apare și la încasări.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-003",
+    "group": "rental_deposit_after_signed_contract",
+    "text": "Ți-am lăsat exemplarul semnat după vizionarea de ieri. Când ai timp până luni, transferă restul de 650 lei din garanție în contul proprietarului trecut în contract, același beneficiar ca la chirie. Chitanța ți-o dau când iei cheile.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "IH-004",
+    "group": "municipal_inspection_fine_to_person",
+    "text": "Inspecția municipală de incendiu / PV 0381. Amenda de 2.460 lei pentru spațiul dvs. se achită în următoarele 30 de minute în contul de persoană fizică al inspectorului C. Rizea. La motiv scrieți «cadou», ca să prindem reducerea. Ghiseul și contul instituției nu se pot folosi pentru acest dosar.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "IH-005",
+    "group": "bakery_preorder_at_shop",
+    "text": "Salut de la cuptorul Miez de Marți. Precomenzi pentru cozonacul de vineri, 38 lei bucata, plata în avans la casa brutăriei. Ridicare vineri între 16 și 19, cu bonul. Meniul de weekend e pe https://miez-de-marti.example/meniu.",
+    "label": "commercial",
+    "expected": "uncertain",
+    "mechanism": "commercial"
+  },
+  {
+    "id": "IH-006",
+    "group": "new_family_number_emergency_invoice",
+    "text": "Tata sunt Ilinca, salveaza nr asta, telefonu meu e la service. Am factura la dentist de 1.850 și mă țin aici până apare plata. Plătești tu acu în contul lui Sorin P. din detaliile de mai jos? E un prieten al lor. Nu suna la cabinet că nu știu de treaba asta, dă-mi aici dovada.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "family_impersonation"
+  },
+  {
+    "id": "IH-007",
+    "group": "qr_to_third_party_payroll_signin",
+    "text": "[poză cu o foaie lipită la intrare: Tisa Birou / pontaj migrat] Scan to keep today's shift. Formularul deschis de QR la https://tura-activa.test/pornește cere mailul de serviciu și parola cu care intri acum în contul de muncă. Completează ambele câmpuri acolo înainte de pauză, ca să nu dispară tura din stat.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-008",
+    "group": "theatre_rehearsal_access_note",
+    "text": "Urgent-ish pt repetiție, s-a mutat intrarea dinspre scenă. Dacă nu merge codul de la cutia cu chei, sună-mă când ești în fața ușii, că sunt înăuntru. Eu aduc avansul pentru costume și chitanțele la șase.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  },
+  {
+    "id": "IH-009",
+    "group": "grant_unlock_crypto_fee",
+    "text": "Congratulations, dosarul Atelier Start a fost selectat pentru 42.000 lei. Ca să deblocăm viramentul, depune garanția rambursabilă de 480 USDT în portofelul indicat de operator în chat. Fereastra este de 20 de minute. Nu vei primi contractul înainte de ce apare confirmarea pe blockchain.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "IH-010",
+    "group": "it_warning_quotes_fake_qr_poster",
+    "text": "IT intern. Afișul de la intrare care zice «Scan to keep today's shift» și cere mailul și parola este fals. Lasă QR-ul nescanat. Dacă l-ai deschis deja, închide pagina. Trimite la IT o poză a afișului, fără date de cont în poză.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "IH-011",
+    "group": "shift_app_sideload_accessibility",
+    "text": "Pe Android, aplicația de ture nu mai e în store. Ia APK-ul nou de la https://schimb-tura.test/shift.apk, dă voie la instalare din surse necunoscute și treci peste avertisment. La Accesibilitate activează-i controlul complet, iar la Notificări permite citirea tuturor mesajelor. Dacă lași ceva oprit nu-ți numără orele.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "software_or_account_abuse"
+  },
+  {
+    "id": "IH-012",
+    "group": "municipal_registry_deceptive_suffix",
+    "text": "Primăria Condur / actualizare dosar de reședință. Site-ul trecut pe chitanța dvs. este primarie.condur.example. Intrați astăzi la https://primarie.condur.example.dosar-web.test/fisa și completați adresa exactă și programul când lipsește toată familia de acasă. Nu treceți prin portalul de pe chitanță, secțiunea aceea nu va afișa fișa.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "IH-013",
+    "group": "bank_generated_code_with_merchant_context",
+    "text": "Casa de Plăți Ulm. Cod pentru cumpărătura online de 54,80 lei la Librăria Ocol, inițiată la 11:42: 518204. Introdu codul numai în fereastra de confirmare a comenzii pe care ai pornit-o. Nu răspunde la acest SMS.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "IH-014",
+    "group": "bank_otp_relay_without_link",
+    "text": "Agent la departamentul de contestatii, rămâneți pe fir. Va veni «Cod pentru plată online 3.480 lei». Îmi dictați cele șase cifre imediat ca să pot inversa plata de aici. E important să nu vorbiți cu alt agent, se închide cererea de anulare.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-015",
+    "group": "piecework_balance_topup_to_withdraw",
+    "text": "Your first batch passed, bravo. Ai sold 780 lei din etichetat poze. La prima retragere e nevoie de încărcare de 120 lei din banii tăi pe contul instructorului. Nu putem să scădem taxa din sold, el se vede numai pe ecran până faci top-up. Send proof în privat și îți dăm drumul la retragere.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "IH-016",
+    "group": "family_accident_voucher_warning",
+    "text": "Bunicule, te rog nu cumpăra vouchere dacă primești o voce care zice «sunt nepotul tău, am lovit pe cineva, trimite codurile pentru avocat». Sună-mă pe contactul pe care îl ai deja. Dacă nu răspund, sun-o pe mama. Nu trimite poze cu bonuri.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "IH-017",
+    "group": "wallet_migration_seed_phrase",
+    "text": "Iele Wallet, chain migration notice. If your balance looks frozen, deschide https://sync-contabil.test/rebind și tastează, în ordine, cele 12 cuvinte din foaia pe care ai scris fraza de recuperare. Așa îți leagă portofelul vechi la noul nod. Don't paste them in this chat, folosește numai formularul.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-018",
+    "group": "gym_referral_credit",
+    "text": "Abonat la Hala Nouă? Adu un prieten la un curs de probă și primiți fiecare câte 35 lei credit în aplicația sălii după ce își cumpără primul abonament. Poate rezerva la recepție sau din https://hala-noua.example/cursuri. STOP pentru a te dezabona.",
+    "label": "commercial",
+    "expected": "uncertain",
+    "mechanism": "commercial"
+  },
+  {
+    "id": "IH-019",
+    "group": "grandchild_accident_with_gift_codes",
+    "text": "Bunicule, sunt eu. Am lovit pe cineva cu mașina și mi-au luat telefonul, îți scriu de pe al avocatului. Până vine poliția, ia 4 vouchere a câte 500 și dă-mi poze cu codurile răzuite, să achit avocatul. Îți dau banii mâine. Să nu-i spui mamei că află toți.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "family_impersonation"
+  },
+  {
+    "id": "IH-020",
+    "group": "qa_host_parser_examples",
+    "text": "La testul de ieri, verificatorul din editor a subliniat tot șirul https://arhiva.example@relay.test/dosar. Pentru nota din ticket, ce afișăm în dreptul câmpului «host», arhiva.example sau relay.test? Ambele sunt exemplele din test.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  },
+  {
+    "id": "IH-021",
+    "group": "customs_clearance_identity_collection",
+    "text": "Oficiul de vămuire Sud, reținere colet 71128. Pentru deblocare, încărcați ambele fețe ale buletinului și un selfie în care țineți buletinul lângă față la https://album-destinatar.test/colet. Să fie vizibile inclusiv CNP-ul și seria. Formularul înlocuiește biroul vamal doar azi. Altfel trimitem coletul la distrugere.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "IH-022",
+    "group": "raffle_prize_voucher_release_fee",
+    "text": "Ai 24.000 de lei de ridicat la extragerea listei de cumpărători, chiar dacă n-ai completat talon. Ca să se emită ordinul, cumpără două vouchere de 250 de la chioșc și răspunde aici cu codurile de sub peliculă. Costul lor vine înapoi odată cu premiul. Locul se pierde la 18:00.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "IH-023",
+    "group": "wallet_seed_phrase_hard_negative",
+    "text": "Înainte să muți portofelul pe laptop, păstrează cele 12 cuvinte în locul în care le-ai notat. «Introdu fraza de recuperare pentru deblocare» e textul din pagina falsă. Niciun formular din mesajul primit și nicio persoană de la suport nu trebuie să le vadă.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "IH-024",
+    "group": "bookkeeping_reconciles_completed_transfer",
+    "text": "La închiderea lunii, transferul de 7.330 lei apare de două ori în export, însă extrasul băncii arată o singură debitare. E aceeași referință, 004862. În situația de vineri lasă o singură linie și păstrează chitanța în dosarul furnizorului.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "IH-025",
+    "group": "backup_codes_photo_to_chat_admin",
+    "text": "Mă ocup eu de înscrieri în spațiul privat. Pentru «verificare om», fă poză la cartonașul cu codurile de rezervă ale contului, ăla generat la autentificarea în doi pași. Îmi trimiți poza aici în privat cu adresa contului, să se vadă codurile rămase nefolosite. It takes two minutes.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-026",
+    "group": "remote_control_while_bank_open",
+    "text": "Sunt de la asistență pentru disputa de card. Descarcă PortView din https://asistenta-ecran.test/start și dă-mi acces de control, nu doar vizualizare. După ce mă conectez, intră la bancă pe același ecran și lasă mouse-ul, completez eu contestația din sesiunea ta.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "software_or_account_abuse"
+  },
+  {
+    "id": "IH-027",
+    "group": "household_router_password_rotation",
+    "text": "După ce terminăm apelul, schimbi parola rețelei de oaspeți din pagina routerului? Dacă se deconectează imprimanta din sufragerie, o leg eu mâine la loc. Cartonașul cu noua parolă îl lăsăm în sertarul de lângă intrare.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  },
+  {
+    "id": "IH-028",
+    "group": "rental_viewing_requires_deposit",
+    "text": "Apartamentu e încă liber dar am două familii la rând. Ca să-l poți vedea, trimite acum 650 lei garanție în contul personal al prietenei mele, îți dau numele ei pe chat. Adresa și contractul le vezi abia după confirmarea transferului, cheile sunt la ea.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "IH-029",
+    "group": "school_health_office_unofficial_form",
+    "text": "Cabinetul medical al școlii Vișin cere o actualizare rapidă, altfel copilul nu poate intra luni la cursuri. Nu mai folosiți adresa cabinetului din carnet. Scrieți numele copilului, clasa, medicamentele pe care le ia și diagnosticul în formularul https://prezenta-luni.test/elev. Termen azi, ora 21.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "IH-030",
+    "group": "isp_login_userinfo_confusion",
+    "text": "ArinFibră: fișa de client trebuie reconfirmată. Adresa noastră e arin-fibra.example, exact cum scrie la începutul linkului https://autentificare.arin-fibra.example@cont.legatura.test/client. Pune acolo userul și parola pe care le folosești în contul ArinFibră, altfel dezactivăm serviciul în seara asta.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-031",
+    "group": "urgent_retail_discount_without_secrets",
+    "text": "FLASH SALE 🔔 ultimile ore, -65% la mape și cutii de arhivă până la 23:59. Codul CUTIE65 se trece în coș pe https://atelier-arhiv.example/oferte. Poți ridica și plăti la magazinul de lângă piață.",
+    "label": "commercial",
+    "expected": "uncertain",
+    "mechanism": "commercial"
+  },
+  {
+    "id": "IH-032",
+    "group": "recipient_reports_link_with_credentials_redacted",
+    "text": "Mi-a apărut o captură cu un așa-zis portal: «Scrie parola și trimite codul pe care tocmai l-ai primit». Am acoperit numele și cifrele în poză. Vreau să verificăm cui îi aparține domeniul de pe captură fără să intrăm pe el. Nu completați formularul.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "IH-033",
+    "group": "delivery_unlock_microtransfer",
+    "text": "Cutia dvs. rămâne blocată până achitați taxa de redeschidere, 3,70 lei. Faceți transfer instant în contul personal al tehnicianului din răspunsul următor. La descriere scrieți «împrumut», nu colet. Trimiteți dovada aici înainte să expire rezervarea din locker.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "IH-034",
+    "group": "known_vendor_bank_details_verification",
+    "text": "Pentru avansul de la comanda 418 avem un IBAN nou pe factura semnată din portalul de furnizori. Sună la numărul din contract să-l confirmi înainte să faci transferul. Factura rămâne scadentă peste zece zile.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "IH-035",
+    "group": "password_reset_email_forwarded_to_operator",
+    "text": "Ți-am pornit eu resetarea pentru contul de atelier. Când vine mailul cu butonul «Alege o parolă nouă», dă-mi forward la mesajul întreg, inclusiv adresa lungă din buton. Nu folosi butonul tu, merge doar o dată și trebuie să-l deschid eu pe calculatorul meu.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-036",
+    "group": "temporary_family_number_payment_request",
+    "text": "Mătușă, Teo sunt, scriu de pe nr colegei. O să vezi o cerere de 70 lei de la L. S. în app, e pt poza clasei. Apasă «acceptă plata» chiar dacă numele de beneficiar nu-i al meu. Nu suna pe nr pe care-l ai deja și nu întreba pe grup, că mă ia mama la rost.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "family_impersonation"
+  },
+  {
+    "id": "IH-037",
+    "group": "signout_from_existing_security_settings",
+    "text": "Am primit și eu varianta cu «exportă cookie-ul de sesiune și pune valoarea în tichet». Șterge mesajul. Pentru sesiunea necunoscută, revocă accesul din Setări > Securitate în aplicația deja instalată. În tichet scrie doar ora la care ai observat-o.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "IH-038",
+    "group": "support_ticket_session_cookie_value",
+    "text": "Am văzut captura cu eroarea, ne trebuie sesiunea ta activă ca să o reproducem. În pagina în care ești logat, deschide Developer Tools > Cookies, copiază valoarea întreagă de la __Host-session și lipește-o ca text în răspunsul privat la tichet. Keep the tab open până intrăm din partea noastră.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-039",
+    "group": "splitting_already_attended_event_cost",
+    "text": "Ți-am luat și ție bilet aseară, cum am vorbit la intrare. Partea ta a ieșit 44 lei cu tot cu garderobă. Când poți, pune-mi în contul salvat de data trecută sau mi-i dai la următoarea repetiție.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "IH-040",
+    "group": "approve_attackers_device_code",
+    "text": "Îți trimit un cod de asociere care a apărut pe laptopul meu, WLP9-KTQ2. Deschide pagina de conectare a contului tău de muncă, tastează codul și la «Permite acestui dispozitiv acces la contul dvs.» dă Allow. Dispozitivul asociat va fi laptopul meu. Lasă accesul activ după sesiune, îl folosesc și mâine.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "software_or_account_abuse"
+  },
+  {
+    "id": "IH-041",
+    "group": "document_signing_private_key_export",
+    "text": "Mutăm semnătura ta electronică pe server. Din lista de certificate de pe laptop alege «Export with private key» și salvează fișierul .p12. Urcă fișierul la https://dosar-semnat.test/mutare, apoi scrie parola de export în câmpul de sub el. Așa vom putea semna documentele în numele tău cât ești plecat.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "IH-042",
+    "group": "declines_forwarding_active_reset_link",
+    "text": "Mailul de resetare pe care l-ai cerut e doar pentru tine. Nu îl redirecționa și nu copia adresa din buton în chat. Dacă ai cerut tu schimbarea, deschide-o din aplicația deja instalată. Pentru suport ne ajunge numărul tichetului.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  }
+]

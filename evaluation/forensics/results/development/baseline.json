@@ -1,0 +1,524 @@
+{
+  "warmup_ms": 4943.02,
+  "warmup_status": "completed",
+  "peak_process_mib": 1141.6,
+  "live_gemini": false,
+  "metrics": {
+    "cases": 10,
+    "scam_recall": {
+      "n": 1,
+      "of": 7,
+      "rate": 0.1429
+    },
+    "scam_precision": {
+      "n": 1,
+      "of": 1,
+      "rate": 1.0
+    },
+    "critical_credential_recall": {
+      "n": 0,
+      "of": 4,
+      "rate": 0.0
+    },
+    "non_scam_false_positive": {
+      "n": 0,
+      "of": 3,
+      "rate": 0.0
+    },
+    "protective_false_positive": {
+      "n": 0,
+      "of": 3,
+      "rate": 0.0
+    },
+    "normal_finance_false_positive": {
+      "n": 0,
+      "of": 0,
+      "rate": null
+    },
+    "commercial_false_positive": {
+      "n": 0,
+      "of": 0,
+      "rate": null
+    },
+    "mechanisms": {
+      "advance_payment": {
+        "recall": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      },
+      "credential_harvesting": {
+        "recall": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      },
+      "family_impersonation": {
+        "recall": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        },
+        "precision": {
+          "n": 0,
+          "of": 1,
+          "rate": 0.0
+        }
+      },
+      "institutional_impersonation": {
+        "recall": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      },
+      "software_or_account_abuse": {
+        "recall": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      }
+    },
+    "inconclusive": {
+      "n": 6,
+      "of": 10,
+      "rate": 0.6
+    },
+    "unestimated": {
+      "n": 0,
+      "of": 10,
+      "rate": 0.0
+    },
+    "consequential_eligible": {
+      "n": 1,
+      "of": 7,
+      "rate": 0.1429
+    },
+    "consequential_escalated": {
+      "n": 0,
+      "of": 7,
+      "rate": 0.0
+    },
+    "gemini_eligible": {
+      "n": 1,
+      "of": 10,
+      "rate": 0.1
+    },
+    "gemini_requests": {
+      "n": 0,
+      "of": 10,
+      "rate": 0.0
+    },
+    "gemini_completed": {
+      "n": 0,
+      "of": 0,
+      "rate": null
+    },
+    "gemini_failed": {
+      "n": 0,
+      "of": 0,
+      "rate": null
+    },
+    "request_ms": {
+      "median": 694.0,
+      "p95": 1108.6
+    },
+    "gemini_ms": null,
+    "model_cases": {
+      "completed": 10
+    },
+    "model_has_author_intent": {
+      "n": 0,
+      "of": 7,
+      "rate": 0.0
+    },
+    "model_unsupported_candidate_cases": 0,
+    "model_scope_conflict_cases": 2
+  },
+  "rows": [
+    {
+      "id": "V01-family-hotel",
+      "group": "relative_hotel_shortfall",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 48,
+      "risk_label": "suspicious",
+      "alert": true,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "suspicious",
+      "confidence": "medium",
+      "predicted_mechanisms": [
+        "family_impersonation"
+      ],
+      "mechanism_ids": [
+        "family_impersonation"
+      ],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "request_money",
+        "unavailable_for_call"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "agreement",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 1027.47
+    },
+    {
+      "id": "V07-token-withdrawal",
+      "group": "digital_wallet_unlock_payment",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 663.39
+    },
+    {
+      "id": "V10-card-two-sides",
+      "group": "payment_card_faces_in_chat",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 680.59
+    },
+    {
+      "id": "V12-otp-circumlocution",
+      "group": "one_time_code_read_aloud",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "consequential_action_unresolved"
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 743.34
+    },
+    {
+      "id": "V13-password-in-reply",
+      "group": "password_object_before_instruction",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_credentials",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 344.84
+    },
+    {
+      "id": "V17-low-context-account-link",
+      "group": "unknown_sender_reactivation_link",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 18,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [
+        {
+          "host": "centrul-de-cont.example",
+          "registrable": "centrul-de-cont.example",
+          "protocol": null,
+          "lookalike": null
+        }
+      ],
+      "request_ms": 616.89
+    },
+    {
+      "id": "V19-consumer-workshop",
+      "group": "consumer_lesson_advance_fee_quote",
+      "truth": "benign",
+      "mechanism": null,
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "promise_payout",
+        "advance_fee_condition"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 707.41
+    },
+    {
+      "id": "V20-conditional-otp-policy",
+      "group": "otp_policy_despite_support_request",
+      "truth": "benign",
+      "mechanism": null,
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 385.28
+    },
+    {
+      "id": "V22-authentication-owner",
+      "group": "passkey_authenticity_warning",
+      "truth": "benign",
+      "mechanism": null,
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_credentials",
+        "request_sensitive_documents",
+        "account_verification_request",
+        "request_credentials",
+        "account_verification_request",
+        "protective_warning"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 1108.6
+    },
+    {
+      "id": "V27-direct-pin-misspelling",
+      "group": "misspelled_pin_disclosure",
+      "truth": "scam",
+      "mechanism": null,
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "legacy",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_credentials",
+        "account_verification_request",
+        "request_money",
+        "request_credentials",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 780.75
+    }
+  ]
+}

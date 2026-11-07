@@ -1,0 +1,1532 @@
+{
+ "tag": "v2.0",
+ "note": "MOCKED semantic layer; deterministic layers are real.",
+ "modes": {
+  "faithful": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     64
+    ],
+    "benign_false_alerts": [
+     5,
+     46
+    ],
+    "critical_credential_recall": [
+     24,
+     24
+    ],
+    "benign_critical": [
+     5,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82",
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     3
+    ],
+    "benign_false_alerts": [
+     3,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     3,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "C-orange-promo-1:75",
+     "E-orange-promo-2:75",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     23
+    ],
+    "benign_false_alerts": [
+     2,
+     18
+    ],
+    "critical_credential_recall": [
+     8,
+     8
+    ],
+    "benign_critical": [
+     2,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     20
+    ],
+    "benign_false_alerts": [
+     0,
+     10
+    ],
+    "critical_credential_recall": [
+     6,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     21
+    ],
+    "benign_false_alerts": [
+     3,
+     18
+    ],
+    "critical_credential_recall": [
+     10,
+     10
+    ],
+    "benign_critical": [
+     3,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 0,
+    "B-fan-coordination": 4,
+    "C-orange-promo-1": 75,
+    "D-cargus-pickup": 4,
+    "E-orange-promo-2": 75,
+    "F-cargus-delivery": 4,
+    "G-tursib-portal": 82
+   }
+  },
+  "over_suspicious": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     91
+    ],
+    "benign_false_alerts": [
+     32,
+     46
+    ],
+    "critical_credential_recall": [
+     24,
+     24
+    ],
+    "benign_critical": [
+     5,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-001:38",
+     "RH-006:40",
+     "RH-008:40",
+     "RH-014:45",
+     "RH-018:38",
+     "RH-020:45",
+     "RH-025:80",
+     "RH-027:45",
+     "RH-030:40",
+     "RH-031:40",
+     "RH-036:38",
+     "RH-039:82",
+     "FH-23:38",
+     "FH-24:45",
+     "FH-25:45",
+     "FH-26:45",
+     "FH-27:40",
+     "FH-28:38",
+     "FH-29:38",
+     "N01:38",
+     "N03:82",
+     "N05:38",
+     "N07:80",
+     "N09:40",
+     "N15:38",
+     "N17:82",
+     "N19:38",
+     "N21:40",
+     "N23:40",
+     "N25:40",
+     "N29:38",
+     "N31:38"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     7
+    ],
+    "benign_false_alerts": [
+     7,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     3,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "A-visa-gpay:38",
+     "B-fan-coordination:40",
+     "C-orange-promo-1:80",
+     "D-cargus-pickup:40",
+     "E-orange-promo-2:80",
+     "F-cargus-delivery:40",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     33
+    ],
+    "benign_false_alerts": [
+     12,
+     18
+    ],
+    "critical_credential_recall": [
+     8,
+     8
+    ],
+    "benign_critical": [
+     2,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-001:38",
+     "RH-006:40",
+     "RH-008:40",
+     "RH-014:45",
+     "RH-018:38",
+     "RH-020:45",
+     "RH-025:80",
+     "RH-027:45",
+     "RH-030:40",
+     "RH-031:40",
+     "RH-036:38",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     27
+    ],
+    "benign_false_alerts": [
+     7,
+     10
+    ],
+    "critical_credential_recall": [
+     6,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "FH-23:38",
+     "FH-24:45",
+     "FH-25:45",
+     "FH-26:45",
+     "FH-27:40",
+     "FH-28:38",
+     "FH-29:38"
+    ]
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     31
+    ],
+    "benign_false_alerts": [
+     13,
+     18
+    ],
+    "critical_credential_recall": [
+     10,
+     10
+    ],
+    "benign_critical": [
+     3,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N01:38",
+     "N03:82",
+     "N05:38",
+     "N07:80",
+     "N09:40",
+     "N15:38",
+     "N17:82",
+     "N19:38",
+     "N21:40",
+     "N23:40",
+     "N25:40",
+     "N29:38",
+     "N31:38"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 38,
+    "B-fan-coordination": 40,
+    "C-orange-promo-1": 80,
+    "D-cargus-pickup": 40,
+    "E-orange-promo-2": 80,
+    "F-cargus-delivery": 40,
+    "G-tursib-portal": 82
+   }
+  },
+  "direction_errors": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     70
+    ],
+    "benign_false_alerts": [
+     11,
+     46
+    ],
+    "critical_credential_recall": [
+     24,
+     24
+    ],
+    "benign_critical": [
+     11,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-001:82",
+     "RH-018:82",
+     "RH-025:80",
+     "RH-039:82",
+     "FH-23:82",
+     "N01:82",
+     "N03:82",
+     "N07:75",
+     "N17:82",
+     "N19:82",
+     "N29:82"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     5
+    ],
+    "benign_false_alerts": [
+     5,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     5,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "C-orange-promo-1:75",
+     "D-cargus-pickup:82",
+     "E-orange-promo-2:75",
+     "F-cargus-delivery:82",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     25
+    ],
+    "benign_false_alerts": [
+     4,
+     18
+    ],
+    "critical_credential_recall": [
+     8,
+     8
+    ],
+    "benign_critical": [
+     4,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-001:82",
+     "RH-018:82",
+     "RH-025:80",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     21
+    ],
+    "benign_false_alerts": [
+     1,
+     10
+    ],
+    "critical_credential_recall": [
+     6,
+     6
+    ],
+    "benign_critical": [
+     1,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "FH-23:82"
+    ]
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     24
+    ],
+    "benign_false_alerts": [
+     6,
+     18
+    ],
+    "critical_credential_recall": [
+     10,
+     10
+    ],
+    "benign_critical": [
+     6,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N01:82",
+     "N03:82",
+     "N07:75",
+     "N17:82",
+     "N19:82",
+     "N29:82"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 0,
+    "B-fan-coordination": 4,
+    "C-orange-promo-1": 75,
+    "D-cargus-pickup": 82,
+    "E-orange-promo-2": 75,
+    "F-cargus-delivery": 82,
+    "G-tursib-portal": 82
+   }
+  },
+  "under_suspicious": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     64
+    ],
+    "benign_false_alerts": [
+     5,
+     46
+    ],
+    "critical_credential_recall": [
+     24,
+     24
+    ],
+    "benign_critical": [
+     5,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82",
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     3
+    ],
+    "benign_false_alerts": [
+     3,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     3,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "C-orange-promo-1:75",
+     "E-orange-promo-2:75",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     23
+    ],
+    "benign_false_alerts": [
+     2,
+     18
+    ],
+    "critical_credential_recall": [
+     8,
+     8
+    ],
+    "benign_critical": [
+     2,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     20
+    ],
+    "benign_false_alerts": [
+     0,
+     10
+    ],
+    "critical_credential_recall": [
+     6,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     21
+    ],
+    "benign_false_alerts": [
+     3,
+     18
+    ],
+    "critical_credential_recall": [
+     10,
+     10
+    ],
+    "benign_critical": [
+     3,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 0,
+    "B-fan-coordination": 4,
+    "C-orange-promo-1": 75,
+    "D-cargus-pickup": 4,
+    "E-orange-promo-2": 75,
+    "F-cargus-delivery": 4,
+    "G-tursib-portal": 82
+   }
+  },
+  "handover_lenient": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     64
+    ],
+    "benign_false_alerts": [
+     5,
+     46
+    ],
+    "critical_credential_recall": [
+     24,
+     24
+    ],
+    "benign_critical": [
+     5,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82",
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     3
+    ],
+    "benign_false_alerts": [
+     3,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     3,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "C-orange-promo-1:75",
+     "E-orange-promo-2:75",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     23
+    ],
+    "benign_false_alerts": [
+     2,
+     18
+    ],
+    "critical_credential_recall": [
+     8,
+     8
+    ],
+    "benign_critical": [
+     2,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     20
+    ],
+    "benign_false_alerts": [
+     0,
+     10
+    ],
+    "critical_credential_recall": [
+     6,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     21
+    ],
+    "benign_false_alerts": [
+     3,
+     18
+    ],
+    "critical_credential_recall": [
+     10,
+     10
+    ],
+    "benign_critical": [
+     3,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 0,
+    "B-fan-coordination": 4,
+    "C-orange-promo-1": 75,
+    "D-cargus-pickup": 4,
+    "E-orange-promo-2": 75,
+    "F-cargus-delivery": 4,
+    "G-tursib-portal": 82
+   }
+  },
+  "ungrounded": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     64
+    ],
+    "benign_false_alerts": [
+     5,
+     46
+    ],
+    "critical_credential_recall": [
+     14,
+     24
+    ],
+    "benign_critical": [
+     1,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:40",
+     "RH-039:40",
+     "N03:40",
+     "N07:75",
+     "N17:40"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     3
+    ],
+    "benign_false_alerts": [
+     3,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     2,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "C-orange-promo-1:75",
+     "E-orange-promo-2:75",
+     "G-tursib-portal:40"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     23
+    ],
+    "benign_false_alerts": [
+     2,
+     18
+    ],
+    "critical_credential_recall": [
+     3,
+     8
+    ],
+    "benign_critical": [
+     0,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-025:40",
+     "RH-039:40"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     20
+    ],
+    "benign_false_alerts": [
+     0,
+     10
+    ],
+    "critical_credential_recall": [
+     4,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     21
+    ],
+    "benign_false_alerts": [
+     3,
+     18
+    ],
+    "critical_credential_recall": [
+     7,
+     10
+    ],
+    "benign_critical": [
+     1,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N03:40",
+     "N07:75",
+     "N17:40"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 0,
+    "B-fan-coordination": 4,
+    "C-orange-promo-1": 75,
+    "D-cargus-pickup": 4,
+    "E-orange-promo-2": 75,
+    "F-cargus-delivery": 4,
+    "G-tursib-portal": 40
+   }
+  },
+  "reading_only": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     56,
+     59
+    ],
+    "precision": [
+     56,
+     61
+    ],
+    "benign_false_alerts": [
+     5,
+     46
+    ],
+    "critical_credential_recall": [
+     1,
+     24
+    ],
+    "benign_critical": [
+     5,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [
+     "RH-029",
+     "FH-15",
+     "FH-19"
+    ],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82",
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     3
+    ],
+    "benign_false_alerts": [
+     3,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     3,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "C-orange-promo-1:75",
+     "E-orange-promo-2:75",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     20,
+     21
+    ],
+    "precision": [
+     20,
+     22
+    ],
+    "benign_false_alerts": [
+     2,
+     18
+    ],
+    "critical_credential_recall": [
+     0,
+     8
+    ],
+    "benign_critical": [
+     2,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [
+     "RH-029"
+    ],
+    "false_alerts": [
+     "RH-025:80",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     18,
+     20
+    ],
+    "precision": [
+     18,
+     18
+    ],
+    "benign_false_alerts": [
+     0,
+     10
+    ],
+    "critical_credential_recall": [
+     1,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [
+     "FH-15",
+     "FH-19"
+    ],
+    "false_alerts": []
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     21
+    ],
+    "benign_false_alerts": [
+     3,
+     18
+    ],
+    "critical_credential_recall": [
+     0,
+     10
+    ],
+    "benign_critical": [
+     3,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N03:82",
+     "N07:75",
+     "N17:82"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 0,
+    "B-fan-coordination": 4,
+    "C-orange-promo-1": 75,
+    "D-cargus-pickup": 4,
+    "E-orange-promo-2": 75,
+    "F-cargus-delivery": 4,
+    "G-tursib-portal": 82
+   }
+  },
+  "over_scam": {
+   "holdouts_combined": {
+    "cases": 105,
+    "scam_recall": [
+     59,
+     59
+    ],
+    "precision": [
+     59,
+     91
+    ],
+    "benign_false_alerts": [
+     32,
+     46
+    ],
+    "critical_credential_recall": [
+     24,
+     24
+    ],
+    "benign_critical": [
+     5,
+     46
+    ],
+    "inconclusive": [
+     0,
+     105
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-001:50",
+     "RH-006:50",
+     "RH-008:50",
+     "RH-014:60",
+     "RH-018:50",
+     "RH-020:60",
+     "RH-025:80",
+     "RH-027:60",
+     "RH-030:50",
+     "RH-031:50",
+     "RH-036:50",
+     "RH-039:82",
+     "FH-23:50",
+     "FH-24:60",
+     "FH-25:60",
+     "FH-26:60",
+     "FH-27:50",
+     "FH-28:50",
+     "FH-29:50",
+     "N01:50",
+     "N03:82",
+     "N05:50",
+     "N07:80",
+     "N09:50",
+     "N15:50",
+     "N17:82",
+     "N19:50",
+     "N21:50",
+     "N23:50",
+     "N25:50",
+     "N29:50",
+     "N31:50"
+    ]
+   },
+   "seven": {
+    "cases": 7,
+    "scam_recall": [
+     0,
+     0
+    ],
+    "precision": [
+     0,
+     7
+    ],
+    "benign_false_alerts": [
+     7,
+     7
+    ],
+    "critical_credential_recall": [
+     0,
+     0
+    ],
+    "benign_critical": [
+     3,
+     7
+    ],
+    "inconclusive": [
+     0,
+     7
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "A-visa-gpay:50",
+     "B-fan-coordination:50",
+     "C-orange-promo-1:80",
+     "D-cargus-pickup:50",
+     "E-orange-promo-2:80",
+     "F-cargus-delivery:50",
+     "G-tursib-portal:82"
+    ]
+   },
+   "release": {
+    "cases": 39,
+    "scam_recall": [
+     21,
+     21
+    ],
+    "precision": [
+     21,
+     33
+    ],
+    "benign_false_alerts": [
+     12,
+     18
+    ],
+    "critical_credential_recall": [
+     8,
+     8
+    ],
+    "benign_critical": [
+     2,
+     18
+    ],
+    "inconclusive": [
+     0,
+     39
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "RH-001:50",
+     "RH-006:50",
+     "RH-008:50",
+     "RH-014:60",
+     "RH-018:50",
+     "RH-020:60",
+     "RH-025:80",
+     "RH-027:60",
+     "RH-030:50",
+     "RH-031:50",
+     "RH-036:50",
+     "RH-039:82"
+    ]
+   },
+   "fresh20": {
+    "cases": 30,
+    "scam_recall": [
+     20,
+     20
+    ],
+    "precision": [
+     20,
+     27
+    ],
+    "benign_false_alerts": [
+     7,
+     10
+    ],
+    "critical_credential_recall": [
+     6,
+     6
+    ],
+    "benign_critical": [
+     0,
+     10
+    ],
+    "inconclusive": [
+     0,
+     30
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "FH-23:50",
+     "FH-24:60",
+     "FH-25:60",
+     "FH-26:60",
+     "FH-27:50",
+     "FH-28:50",
+     "FH-29:50"
+    ]
+   },
+   "fresh21": {
+    "cases": 36,
+    "scam_recall": [
+     18,
+     18
+    ],
+    "precision": [
+     18,
+     31
+    ],
+    "benign_false_alerts": [
+     13,
+     18
+    ],
+    "critical_credential_recall": [
+     10,
+     10
+    ],
+    "benign_critical": [
+     3,
+     18
+    ],
+    "inconclusive": [
+     0,
+     36
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "N01:50",
+     "N03:82",
+     "N05:50",
+     "N07:80",
+     "N09:50",
+     "N15:50",
+     "N17:82",
+     "N19:50",
+     "N21:50",
+     "N23:50",
+     "N25:50",
+     "N29:50",
+     "N31:50"
+    ]
+   },
+   "seven_scores": {
+    "A-visa-gpay": 50,
+    "B-fan-coordination": 50,
+    "C-orange-promo-1": 80,
+    "D-cargus-pickup": 50,
+    "E-orange-promo-2": 80,
+    "F-cargus-delivery": 50,
+    "G-tursib-portal": 82
+   }
+  }
+ }
+}

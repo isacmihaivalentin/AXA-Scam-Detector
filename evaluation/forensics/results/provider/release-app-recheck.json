@@ -1,0 +1,1 @@
+{"http_status": 401, "app_http_status": 200, "gemini": {"eligible": true, "requested": true, "status": "failed", "reason": "consequential_action_unresolved", "failure": "authentication_or_access", "elapsed_ms": 1579.2}, "risk_status": "unestimated", "local_subtotal": 18}

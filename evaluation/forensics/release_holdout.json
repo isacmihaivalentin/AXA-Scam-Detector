@@ -1,0 +1,329 @@
+[
+  {
+    "id": "RH-001",
+    "group": "self_initiated_study_portal_signin",
+    "text": "Atelierul de lectură: codul de conectare pe care tocmai l-ai cerut este 764 139. Pune-l în caseta rămasă deschisă din ecranul tău de logare. E valabil 5 min. Mesaj generat automat.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  },
+  {
+    "id": "RH-002",
+    "group": "retained_bank_card_pin_in_two_parts",
+    "text": "Sunt tehnicianul de la automatul care ți-a înghițit cardul. Îl am la mine, pot să-l scot din blocaj azi. Nu scrie PIN-ul dintr-o bucată: trimite aici primele 2 cifre pe un rând și ultimele 2 separat. Mă refer la alea pe care le bagi la bancomat, nu la cele de pe card.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-003",
+    "group": "pet_adoption_transport_prepayment",
+    "text": "Puiul de pisică e gratis și poate pleca azi. Plătești întâi 165 lei transportul în contul pe care ți-l scrie șoferul pe chat, apoi îți dau locația de unde pleacă. Nu am cum să fac apel video ori să ne întâlnim, trebuie trimis avansu ca să țină locul în mașină.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "RH-004",
+    "group": "revoke_email_permission_after_consent",
+    "text": "Când vezi «Permite citirea și expedierea tuturor mesajelor», apasă Refuză. Acordul din reclama cu calendarul ajunge la o aplicație din afara firmei. Dacă i-ai dat deja acces, intră la Aplicații conectate din contul tău și revocă-l. Calendarul pe care îl folosești de obicei rămâne sincronizat.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-005",
+    "group": "calendar_sync_oauth_with_mailbox_scope",
+    "text": "Calendarul de la conferință se importă din https://sincronizare-panel.test/connect. Dacă apare «Acest editor nu a fost verificat», continuă. Bifează Citirea tuturor mesajelor, Trimiterea din căsuța ta și Acces chiar când ești offline, apoi dă Allow. Lasă toate trei bifate, chiar dacă vrei să importe doar întâlnirile.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "software_or_account_abuse"
+  },
+  {
+    "id": "RH-006",
+    "group": "design_app_trial_promotion",
+    "text": "E ultima zi de înscriere la proba gratuită de desen tehnic de la Plan de Hârtie. În contul de curs pe care îl ai deja, treci codu promo SCHITA la pagina Abonament. Cele două lecții se termină automat duminică. Înscrierea e și la recepție.",
+    "label": "commercial",
+    "expected": "uncertain",
+    "mechanism": "commercial"
+  },
+  {
+    "id": "RH-007",
+    "group": "family_cash_drop_at_building_entrance",
+    "text": "Sunt sor-ta, plicul cu banii de chirie e în sertarul cu prosoape. Pune-i pe toți, 2.800 lei, și dă plicul închis bărbatului cu casca galbenă de la intrare, zice că vine din partea mea. A ajuns acu, nu-l lăsa să plece. Pe nr meu de obicei nu verifica, îți explic în chatul ăsta mai târziu.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "family_impersonation"
+  },
+  {
+    "id": "RH-008",
+    "group": "routine_employee_expense_reimbursement",
+    "text": "pt decontul deplasării îmi trebuie bonul și IBANu pe care vrei să-ți intre cei 96 lei. Încarcă-le la Deconturi în intranet, acolo unde ai deschis cererea. Dacă ajung după prânz intră în lotul de săptămâna viitoare.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "RH-009",
+    "group": "esim_activation_profile_handoff",
+    "text": "Linia ta rămâne pe același număr. Când îți vine mailul cu «Activare eSIM», nu scana codul din el. Trimite-mi în schimb poza întreagă cu QR-ul, o scanez eu pe telefonul meu ca să mut numărul pentru verificare. După aia poți să ștergi mesajul de la operator.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-010",
+    "group": "transit_dispute_premium_call_loop",
+    "text": "Direcția de Transport Valea Frasinului, proces-verbal T71. Contestațiile se înscriu exclusiv prin numărul cu tarif special din secțiunea Audiere la https://dispecer-traseu.test/T71. Linia costă 4,50 euro/minut. Ține apelul deschis cel puțin 12 minute chiar dacă auzi numai muzică, altfel dosarul se clasează. Ghișeul de abonamente nu preia reclamații.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "RH-011",
+    "group": "legitimate_esim_local_activation_boundary",
+    "text": "QR-ul pe care l-ai primit la schimbarea abonamentului activează numărul pe telefonul care îl scanează. Folosește-l doar de pe telefonul tău, din Setări > Rețea. Dacă cineva pretinde că are nevoie de o poză ca să facă «test de semnal», păstrează QR-ul la tine și oprește conversația.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-012",
+    "group": "stolen_investment_recovery_release_payment",
+    "text": "Am găsit banii pe care i-ai pierdut în platforma de investiții. Recovery confirmat, 31.600 lei. Adu în numerar taxa de eliberare de 1.790 lei persoanei din parcarea pe care ți-o dau în privat. Îți arată ordinul de restituire doar după ce-i dai banii. Nu suna la banca ta, ne blochează procedura dacă deschide alt dosar.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "RH-013",
+    "group": "browser_password_store_csv_upload",
+    "text": "Mutăm profilul de browser pe alt laptop. Deschde Manager de parole > Exportă parolele și salvează passwords.csv cu toate logările. Trage-l în caseta de la https://profil-nou.test/import, așa ne asigurăm că datele rămân confidențiale. Te rugăm să nu copiezi nicio parolă ca text în chat.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-014",
+    "group": "existing_contract_manual_installment",
+    "text": "Rata 3 din eșalonarea semnată în august e scadentă pe 18. În aplicația băncii alege beneficiarul pe care l-ai salvat la prima plată și pune la detalii referința de pe contract. Suma e 319,40 lei, exact cât scrie în grafic.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "RH-015",
+    "group": "pension_agent_blank_proxy_form",
+    "text": "Serviciul de Revizuire Pensii / majorare restantă. Semnați și datați rubrica «Împuternicesc persoana de mai jos să încaseze sumele în numele meu», dar lăsați numele împuternicitului și suma necompletate. Trimiteți poza paginii semnate la dosar-personal@punct-indexare.test până la ora 14. Agentul va completa restul după primire.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "RH-016",
+    "group": "quoted_export_instruction_in_training_review",
+    "text": "«Exportă parolele în CSV și încarcă documentul pe formularul de migrare.» Asta era fraza pe care trebuia s-o sublinieze participanții în fișa de curs. Dacă o găsiți într-un tichet real, opriți încărcarea și marcați-l ca incident. Fișa rămâne pe ecran doar ca exemplu.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-017",
+    "group": "wallet_unlimited_spend_authorization",
+    "text": "Acces la colecția Mărgele de Sare. Leagă portofelul de https://ridicare-margele.test/claim și la confirmare semnează «Allow unlimited spending» pentru toate jetoanele din sold. Lasă suma nelimitată și contractul aprobat permanent, chiar dacă interfața îți spune că poate muta fondurile fără altă confirmare. Așa primești obiectul.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "software_or_account_abuse"
+  },
+  {
+    "id": "RH-018",
+    "group": "personal_key_touch_for_current_login",
+    "text": "După ce dai tu Conectează-te pe laptopul de acasă, o să clipească cheia fizică. Pune degetul pe ea ca să intri în contul tău. Dacă apare fereastra Windows Security, bagi PIN-ul cheii acolo, pe același laptop. Eu aștept să pornească prezentarea.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  },
+  {
+    "id": "RH-019",
+    "group": "email_app_password_to_third_party_importer",
+    "text": "Pentru transferul contactelor nu-mi trebuie parola normală. În mail, la Securitate, generează o parolă de aplicație care poate citi și trimite mesaje. Scrie codul ăla de 16 caractere în reply aici cu adresa ta de e-mail. Keep it active după import, serviciul nostru trebuie să poată intra din nou.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-020",
+    "group": "wholesale_returnable_crate_deposit",
+    "text": "Bună, lădițele de pere ajung joi. Garanția e 10 lei pe ladă și apare separat pe factura din comandă. Când le aduceți înapoi, scădem garanția de pe următoarea factură. Marfa se plătește la livrare ca până acum.",
+    "label": "commercial",
+    "expected": "uncertain",
+    "mechanism": "commercial"
+  },
+  {
+    "id": "RH-021",
+    "group": "relative_redirects_recurring_rent_income",
+    "text": "Tatăl tău aici. Înainte să vireze chiriașul mâine, schimbă-i instrucțiunea de plată pentru toate lunile de acum încolo. Scrie-i să vireze chiria garsonierei în noul cont al lui M. S., îți dau IBAN separat. Dacă primești răspuns la mailul meu vechi ignoră-l, fă schimbarea doar pe baza mesajului de aici.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "family_impersonation"
+  },
+  {
+    "id": "RH-022",
+    "group": "family_rejects_redirected_rent_instruction",
+    "text": "Chiria merge tot la contul din contract. «Schimbă plata tuturor lunilor în contul lui M. S.» e mesajul fals care a circulat de pe profilul copiat. Îl poți marca și șterge. Dacă apare o schimbare reală o discutăm cu proprietarul, la numărul din contract.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-023",
+    "group": "fake_security_key_recall_bundles_factor_and_pin",
+    "text": "Lotul de chei fizice pentru login la muncă se retrage azi. Pune cheia ta de autentificare USB într-un plic și lasă-l curierului de la intrarea laterală. Scrie PIN-ul ei pe biletul din plic, ca să o putem debloca în atelier fără tine. Cererea e confidențială, nu deschide tichet IT.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-024",
+    "group": "inventory_hiring_induction_fee",
+    "text": "ai prins tura de inventar. Înainte să primești contractu, pune 95 lei pentru instructaj în contul personal al coordonatoarei și dă-mi poza cu transferu. Suma revine la primul salariu. Nu te duce la magazin să întrebi, pe listă te adaugăm doar după ce intră banii.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "RH-025",
+    "group": "carrier_forwarding_cleanup_with_quoted_command",
+    "text": "Mesajul cu «lasă toate apelurile redirecționate la agent» vine de la cineva care vrea să preia convorbirile în locul tău. Verifică în setările telefonului dacă e activă Redirecționare și dezactiveaz-o. Sună la operator din aplicația lui dacă nu te lasă s-o oprești.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-026",
+    "group": "carrier_support_all_call_forwarding",
+    "text": "Am deschis intervenția pentru semnal. La Setări apel, pune Redirecționare > Toate apelurile spre numărul de mobil al agentului pe care ți-l trimit separat. Las-o pornită și peste noapte, colegii mei trebuie să poată răspunde în locul tău inclusiv la apelurile automate de verificare a conturilor.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "software_or_account_abuse"
+  },
+  {
+    "id": "RH-027",
+    "group": "repair_deposit_against_estimate",
+    "text": "am primit devizu pentru burlanele rupte, l-am acceptat azi la atelier. Le achităm 30% avans pe factura 827, cu beneficiarul firmei de pe deviz. Restul după ce verificăm montajul vineri. Pune factura în dosarul blocului.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "RH-028",
+    "group": "procurement_review_redirects_sensitive_supplier_files",
+    "text": "Oficiul Județean de Achiziții, audit de furnizor 286. Trimiteți la revizie-dosare@evidenta-instant.test contractele în vigoare, cu anexele de preț ale subcontractorilor și toate datele persoanelor de contact. Colegii de la registratura pe care o aveți în contract nu știu de audit și nu trebuie consultați. Primim arhiva doar în această seară.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "institutional_impersonation"
+  },
+  {
+    "id": "RH-029",
+    "group": "production_package_registry_write_token",
+    "text": "Build checker pentru publicarea pachetului. Pe https://verificator-pachete.test/probe pune valoarea completă a tokenului cu care faci deja release-uri în registrul companiei. Trebuie să aibă permisiune de scriere și ștergere, nu merge cheia de test. Formularul e în afara pipeline-ului, deci lasă tokenul activ și după verificare.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-030",
+    "group": "studio_open_class_presale",
+    "text": "Sâmbătă avem oră deschisă de percuție la Sala Castan. Până mâine seară biletul e 25 lei, apoi 40. Mai sunt 8 locurle libere. Luați biletul de la casa sălii sau din pagina de evenimente https://sala-castan.example/program.",
+    "label": "commercial",
+    "expected": "uncertain",
+    "mechanism": "commercial"
+  },
+  {
+    "id": "RH-031",
+    "group": "library_reservation_pickup_barcode",
+    "text": "Echipamnetul de proiecție e pregătit la biblioteca de cartier. Arătați codul de ridicare din Rezervările mele bibliotecarei de la ghișeu, ca să găsească fișa de împrumut. Îl puteți lua până la ora 17. Nu trebuie făcută o rezervare nouă.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  },
+  {
+    "id": "RH-032",
+    "group": "instant_loan_private_kiosk_deposit",
+    "text": "Credit de 9.800 lei aprobat fără acte. Ca să intre azi, depune 920 lei la terminalul de plăți, la Alimentare portofel, pe identificatorul personal al brokerului din conversație. E asigurarea creditului și se restituie după prima rată. Contractul se generează după depunere, oferta expiră în 15 min.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "advance_payment"
+  },
+  {
+    "id": "RH-033",
+    "group": "uncle_borrowed_phone_prepaid_topup",
+    "text": "Unchiu Doru sunt. Mi s-a stins fonul, îți scriu de la un coleg. Când treci pe lângă chioșc, bagă-i credit de 30 euro pe numărul ăsta al lui, scrie-mi când ai pus. Nu încerca să mă prinzi la numărul meu și nu-i da mesaj lui tanti, nici ea nu știe că sunt la el.",
+    "label": "scam",
+    "expected": "suspicious",
+    "mechanism": "family_impersonation"
+  },
+  {
+    "id": "RH-034",
+    "group": "transit_premium_number_public_warning",
+    "text": "Atenție la sms-ul «ține apelul deschis 12 minute chiar dacă auzi doar muzică». Numărul cu tarif special de acolo nu e al Direcției. Închide apelul și șterge sms-ul. Pentru o amendă reală folosește datele tipărite pe procesul-verbal primit în autobuz.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-035",
+    "group": "patient_portal_signin_with_canonical_name_in_fragment",
+    "text": "Clinica Alun, buletinul de analize e gata. Vezi că adresa oficială apare la final aici: https://copie-analize.test/verifica#https://dosare.alun-medical.example/intrare . În pagina deschisă introdu adresa de e-mail și aceeași parolă cu care intri de obicei la dosarul medical. Intrarea veche nu va arăta documentul.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-036",
+    "group": "merchant_refund_to_original_payment_method",
+    "text": "Am primit returul cu bonul 0047. Restituim 128 lei pe cardul cu care s-a făcut plata, de la casa magazinului. Vezi mișcarea pe extras în câteva zile. Ajunge numărul comenzii dacă ne suni la recepție.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "normal_finance"
+  },
+  {
+    "id": "RH-037",
+    "group": "work_portal_passwordless_code_relay",
+    "text": "Ți-am cerut o conectare la dosarul de vânzări, pentru inventar. Vine un e-mail de la portal cu opt caractere și textul «Acest cod deschide sesiunea în browser». Pune caracterele exact în răspunsul la mesajul ăsta. Nu te loga tu, eu am rămas la ecranul unde se introduce codul, pe calculatorul din depozit.",
+    "label": "scam",
+    "expected": "critical",
+    "mechanism": "credential_harvesting",
+    "credential": true
+  },
+  {
+    "id": "RH-038",
+    "group": "reported_exposed_code_then_local_remediation",
+    "text": "Am făcut o prostie la inventar. Mailul zicea «pune codul de conectare în răspuns și rămâi pe fir» și i l-am scris ieri, apoi am văzut o sesiune nouă. Mă ajuți să găsesc butonul Închide toate sesiunile în aplicația reală? Am scos codul din captura pentru incident.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "protective",
+    "protective": true
+  },
+  {
+    "id": "RH-039",
+    "group": "routine_own_password_change_in_account_settings",
+    "text": "Ești deja în contul de la curs, da? Din profil deschizi Schimbă parola, completezi parola veche și pe cea nouă în cele două casete din cont. Dacă merge, ne vedem direct în camera de curs la 6. eu intru de pe contu meu.",
+    "label": "benign",
+    "expected": "uncertain",
+    "mechanism": "ordinary"
+  }
+]

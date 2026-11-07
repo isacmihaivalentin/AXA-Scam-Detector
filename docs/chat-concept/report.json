@@ -1,0 +1,967 @@
+{
+ "note": "MOCK Gemini readings; deterministic layers real.",
+ "runs": [
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 320,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1455,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 320,
+   "facts": {
+    "status": "placed",
+    "position": "87",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 4,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1455,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 320,
+   "facts": {
+    "status": "placed",
+    "position": "60",
+    "marker": true,
+    "lamps": [
+     "l-a on"
+    ],
+    "action": true,
+    "title": "Mesaj suspect"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 1,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1455,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 320,
+   "facts": {
+    "status": "placed",
+    "position": "0",
+    "marker": true,
+    "lamps": [
+     "l-g on"
+    ],
+    "action": true,
+    "title": "Nu am găsit indicii clare de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-note:104x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1455,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 320,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1455,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "87",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-alarm:259x19"
+   ],
+   "controlsUnder44": 4,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "60",
+    "marker": true,
+    "lamps": [
+     "l-a on"
+    ],
+    "action": true,
+    "title": "Mesaj suspect"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:214x19"
+   ],
+   "controlsUnder44": 1,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "0",
+    "marker": true,
+    "lamps": [
+     "l-g on"
+    ],
+    "action": true,
+    "title": "Nu am găsit indicii clare de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 390,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 390,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 13,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "85",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:97x19",
+    "ev ev-attention:165x19",
+    "ev ev-alarm:227x19"
+   ],
+   "controlsUnder44": 3,
+   "controls": 19,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 768,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1574,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 768,
+   "facts": {
+    "status": "placed",
+    "position": "87",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:239x19",
+    "ev ev-attention:226x19",
+    "ev ev-alarm:259x19",
+    "ev ev-attention:374x19"
+   ],
+   "controlsUnder44": 4,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1574,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 768,
+   "facts": {
+    "status": "placed",
+    "position": "60",
+    "marker": true,
+    "lamps": [
+     "l-a on"
+    ],
+    "action": true,
+    "title": "Mesaj suspect"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-alarm:423x19",
+    "ev ev-attention:214x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1574,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 768,
+   "facts": {
+    "status": "placed",
+    "position": "0",
+    "marker": true,
+    "lamps": [
+     "l-g on"
+    ],
+    "action": true,
+    "title": "Nu am găsit indicii clare de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-protective:83x19",
+    "ev ev-note:104x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1574,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 768,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1574,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 1440,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "87",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:226x19"
+   ],
+   "controlsUnder44": 4,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "60",
+    "marker": true,
+    "lamps": [
+     "l-a on"
+    ],
+    "action": true,
+    "title": "Mesaj suspect"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:214x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "0",
+    "marker": true,
+    "lamps": [
+     "l-g on"
+    ],
+    "action": true,
+    "title": "Nu am găsit indicii clare de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-protective:83x19",
+    "ev ev-note:104x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 1440,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 1440,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 13,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "85",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:97x19",
+    "ev ev-attention:165x19"
+   ],
+   "controlsUnder44": 3,
+   "controls": 19,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "dark",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "dark",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "87",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-alarm:259x19"
+   ],
+   "controlsUnder44": 4,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "dark",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "60",
+    "marker": true,
+    "lamps": [
+     "l-a on"
+    ],
+    "action": true,
+    "title": "Mesaj suspect"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:214x19"
+   ],
+   "controlsUnder44": 1,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "dark",
+   "w": 390,
+   "facts": {
+    "status": "placed",
+    "position": "0",
+    "marker": true,
+    "lamps": [
+     "l-g on"
+    ],
+    "action": true,
+    "title": "Nu am găsit indicii clare de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "dark",
+   "w": 390,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 1556,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "dark",
+   "w": 1440,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "dark",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "87",
+    "marker": true,
+    "lamps": [
+     "l-r on"
+    ],
+    "action": true,
+    "title": "Indicii puternice de tentativă de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:226x19"
+   ],
+   "controlsUnder44": 4,
+   "controls": 31,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "dark",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "60",
+    "marker": true,
+    "lamps": [
+     "l-a on"
+    ],
+    "action": true,
+    "title": "Mesaj suspect"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-attention:214x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "dark",
+   "w": 1440,
+   "facts": {
+    "status": "placed",
+    "position": "0",
+    "marker": true,
+    "lamps": [
+     "l-g on"
+    ],
+    "action": true,
+    "title": "Nu am găsit indicii clare de fraudă"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ev ev-protective:83x19",
+    "ev ev-note:104x19"
+   ],
+   "controlsUnder44": 2,
+   "controls": 15,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "dark",
+   "w": 1440,
+   "facts": {
+    "status": "unestimated",
+    "position": null,
+    "marker": false,
+    "lamps": [],
+    "action": true,
+    "title": "Nu putem evalua suficient mesajul"
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 12,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 900,
+   "errors": []
+  }
+ ],
+ "checks": {
+  "errorKeepsText": "text scris de mine",
+  "retryWorks": true,
+  "focusAfterResult": true,
+  "noStorageOfText": [],
+  "markerGlide": {
+   "early": 0,
+   "late": 246
+  }
+ }
+}

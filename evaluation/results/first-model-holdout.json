@@ -1,0 +1,1254 @@
+{
+  "warmup_api_ms": 3801.06,
+  "peak_process_mib": 1654.6,
+  "mock_gemini": false,
+  "metrics": {
+    "n": 30,
+    "confusion": {
+      "tp": 8,
+      "fp": 2,
+      "tn": 12,
+      "fn": 8
+    },
+    "critical_credential_recall": 0.5,
+    "credential_n": 8,
+    "scam_recall": 0.5,
+    "scam_precision": 0.8,
+    "false_positive_rate_non_scam": 0.1429,
+    "false_positive_rate_protective": 0.5,
+    "protective_n": 4,
+    "macro_f1": 0.6606,
+    "inconclusive_rate": 0.3333,
+    "gemini_eligible_rate": 0.2333,
+    "gemini_requested_rate": 0.0,
+    "median_ms": 627.43,
+    "p95_ms": 961.01,
+    "local_median_ms": 625.75,
+    "local_p95_ms": 956.9
+  },
+  "rows": [
+    {
+      "id": "H01-relative-stranded",
+      "group": "stranded_relative_sim_problem",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 1119.28,
+      "local_ms": 1115.5,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "unavailable_for_call",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H02-registration-fee-relative",
+      "group": "relative_registration_pretext",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 22,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 876.64,
+      "local_ms": 874.4,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata",
+        "Presiune de timp sau consecinte"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "urgency_or_pressure",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H03-real-emergency-known-number",
+      "group": "real_family_medical_expense",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 703.05,
+      "local_ms": 701.2,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H04-genuine-porting",
+      "group": "real_family_porting_and_invoice",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 829.4,
+      "local_ms": 827.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H05-release-insurance",
+      "group": "insurance_payout_processing_charge",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 58,
+      "risk": "suspicious",
+      "alert": true,
+      "assessment": "suspicious",
+      "type": "advance_fee",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 651.33,
+      "local_ms": 649.5,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata",
+        "Posibila frauda cu plata in avans"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "promise_payout",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "rules",
+          "scope": "rule_span"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H06-inheritance-clearance",
+      "group": "estate_clearance_tax",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 621.97,
+      "local_ms": 620.3,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H07-retroactive-commission",
+      "group": "legitimate_commission_after_payout",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 605.28,
+      "local_ms": 603.4,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "promise_payout",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "promise_payout",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H08-utility-invoice",
+      "group": "ordinary_metered_utility_invoice",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 654.38,
+      "local_ms": 652.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H09-resale-unlock",
+      "group": "marketplace_balance_unlock",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 22,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 615.0,
+      "local_ms": 613.2,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata",
+        "Presiune de timp sau consecinte"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "urgency_or_pressure",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "promise_payout",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H10-card-expiry-screenshot",
+      "group": "card_screenshot_expiry",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 632.9,
+      "local_ms": 631.2,
+      "local_status": "completed",
+      "gemini_reason": "semantic_request_unresolved",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "request_card_photo",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H11-required-card-image",
+      "group": "card_image_for_release",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 619.19,
+      "local_ms": 617.6,
+      "local_status": "completed",
+      "gemini_reason": "consequential_action_unresolved",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": []
+    },
+    {
+      "id": "H12-six-digit-code",
+      "group": "bank_code_circumlocution",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 729.87,
+      "local_ms": 728.2,
+      "local_status": "completed",
+      "gemini_reason": "consequential_action_unresolved",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": []
+    },
+    {
+      "id": "H13-pin-implicit",
+      "group": "indirect_pin_assistance",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 571.06,
+      "local_ms": 569.1,
+      "local_status": "completed",
+      "gemini_reason": "semantic_request_unresolved",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H14-cvv-genuine-domain",
+      "group": "cvv_request_with_payment_brand_domain",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 597.74,
+      "local_ms": 578.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        },
+        {
+          "label": "advance_fee_condition",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "www.olx.ro",
+          "registrable": "olx.ro",
+          "catalog": "verified_database"
+        }
+      ]
+    },
+    {
+      "id": "H15-passport-scan",
+      "group": "passport_scan_in_chat",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "suspicious",
+      "expected_type": null,
+      "score": 45,
+      "risk": "suspicious",
+      "alert": true,
+      "assessment": "suspicious",
+      "type": "sensitive_documents",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 611.46,
+      "local_ms": 609.8,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_sensitive_documents",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_sensitive_documents",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H16-in-person-id",
+      "group": "in_person_id_instruction",
+      "truth": "benign",
+      "credential": false,
+      "protective": true,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 578.31,
+      "local_ms": 576.7,
+      "local_status": "completed",
+      "gemini_reason": "consequential_action_unresolved",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": []
+    },
+    {
+      "id": "H17-official-ing-cover",
+      "group": "otp_using_ing_as_cover",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 568.99,
+      "local_ms": 567.1,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "ing.ro",
+          "registrable": "ing.ro",
+          "catalog": "verified_database"
+        }
+      ]
+    },
+    {
+      "id": "H18-automatic-code",
+      "group": "actual_service_describes_code_delivery",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 588.6,
+      "local_ms": 586.9,
+      "local_status": "completed",
+      "gemini_reason": "semantic_request_unresolved",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H19-card-policy",
+      "group": "payment_card_data_policy",
+      "truth": "benign",
+      "credential": false,
+      "protective": true,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 620.24,
+      "local_ms": 618.5,
+      "local_status": "completed",
+      "gemini_reason": "mixed_or_conflicting_intent",
+      "gemini_eligible": true,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "protective_warning",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_credentials",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "protective_warning",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H20-customer-bulletin",
+      "group": "bank_customer_education_card_message",
+      "truth": "benign",
+      "credential": false,
+      "protective": true,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 45,
+      "risk": "suspicious",
+      "alert": true,
+      "assessment": "suspicious",
+      "type": "sensitive_documents",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 841.1,
+      "local_ms": 839.3,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "educational_example",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_sensitive_documents",
+          "source": "local_nli",
+          "scope": "clause"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H21-raiffeisen-hostname",
+      "group": "different_bank_account_status_host",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 72,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "organization_lookalike",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 552.22,
+      "local_ms": 549.8,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Actiune asupra contului sau formularului",
+        "Identitate pretinsa si link de verificare asemanator"
+      ],
+      "observations": [
+        {
+          "label": "organization_impersonation_claim",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "raiffeisen.ro.profil-online.example",
+          "registrable": "profil-online.example",
+          "catalog": null
+        }
+      ]
+    },
+    {
+      "id": "H22-innocent-domain",
+      "group": "ordinary_community_photo_links",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 526.22,
+      "local_ms": 524.2,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": [
+        {
+          "host": "catalog-foto.example",
+          "registrable": "catalog-foto.example",
+          "catalog": null
+        }
+      ]
+    },
+    {
+      "id": "H23-parts-ad",
+      "group": "classified_ad_small_workshop",
+      "truth": "commercial",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": "commercial_solicitation",
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 659.32,
+      "local_ms": 657.1,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": []
+    },
+    {
+      "id": "H24-free-trial",
+      "group": "free_trial_promo",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": "reward_offer",
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 961.01,
+      "local_ms": 956.9,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": [
+        {
+          "host": "oferta-servicii.example",
+          "registrable": "oferta-servicii.example",
+          "catalog": null
+        }
+      ]
+    },
+    {
+      "id": "H25-protective-exception",
+      "group": "protective_then_sms_agent",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 857.19,
+      "local_ms": 854.0,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "rules",
+          "scope": "rule_span"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H26-typo-auth",
+      "group": "informal_otp_typos",
+      "truth": "scam",
+      "credential": true,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 70,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "credential_disclosure",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 597.61,
+      "local_ms": 595.7,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de date sensibile"
+      ],
+      "observations": [
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "request_credentials",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H27-ordinary-chat",
+      "group": "household_coordination",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "inconclusive",
+      "type": "undetermined",
+      "confidence": "low",
+      "inconclusive": true,
+      "ms": 700.34,
+      "local_ms": 698.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [],
+      "domains": []
+    },
+    {
+      "id": "H28-unrelated-benefit-and-bill",
+      "group": "unrelated_payout_and_invoice",
+      "truth": "benign",
+      "credential": false,
+      "protective": false,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 12,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "undetermined",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 647.62,
+      "local_ms": 645.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Solicitare de plata"
+      ],
+      "observations": [
+        {
+          "label": "request_money",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "promise_payout",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "request_money",
+          "source": "local_nli",
+          "scope": "clause"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H29-otp-protective-code-switch",
+      "group": "bilingual_security_training",
+      "truth": "benign",
+      "credential": false,
+      "protective": true,
+      "expected": "uncertain",
+      "expected_type": null,
+      "score": 0,
+      "risk": "uncertain",
+      "alert": false,
+      "assessment": "limited_indicators",
+      "type": "protective_or_educational",
+      "confidence": "medium",
+      "inconclusive": false,
+      "ms": 655.33,
+      "local_ms": 652.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [],
+      "observations": [
+        {
+          "label": "educational_example",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "protective_warning",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "protective_warning",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": []
+    },
+    {
+      "id": "H30-contested-transfer",
+      "group": "lookalike_identity_threat_transfer",
+      "truth": "scam",
+      "credential": false,
+      "protective": false,
+      "expected": "critical",
+      "expected_type": null,
+      "score": 72,
+      "risk": "critical",
+      "alert": true,
+      "assessment": "critical",
+      "type": "organization_lookalike",
+      "confidence": "high",
+      "inconclusive": false,
+      "ms": 607.25,
+      "local_ms": 604.6,
+      "local_status": "completed",
+      "gemini_reason": null,
+      "gemini_eligible": false,
+      "gemini_requested": false,
+      "tactics": [
+        "Actiune asupra contului sau formularului",
+        "Identitate pretinsa si link de verificare asemanator"
+      ],
+      "observations": [
+        {
+          "label": "organization_impersonation_claim",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "rules",
+          "scope": "rule_span"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "clause"
+        },
+        {
+          "label": "account_verification_request",
+          "source": "local_nli",
+          "scope": "whole_message"
+        }
+      ],
+      "domains": [
+        {
+          "host": "ing.ro.suport-plati.example",
+          "registrable": "suport-plati.example",
+          "catalog": null
+        }
+      ]
+    }
+  ]
+}

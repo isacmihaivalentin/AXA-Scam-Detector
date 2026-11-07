@@ -1,0 +1,20 @@
+{
+ "main: dialog opens before any request": "PASS",
+ "main: focus starts on the dialog heading": "PASS",
+ "main: refusal sends nothing": "PASS",
+ "main: refusal explains and keeps the text": "PASS",
+ "main: refusal is not stored": "PASS",
+ "main: Escape counts as refusal": "PASS",
+ "main: \"read first\" sends nothing and goes to the GDPR section": "PASS",
+ "main: screenshot refused sends nothing": "PASS",
+ "main: agreement continues the check": "PASS",
+ "main: agreement is recorded with a timestamp": "PASS",
+ "main: no second prompt after agreement": "PASS",
+ "main: GDPR section shows the consent state": "PASS",
+ "main: withdrawal clears the record": "PASS",
+ "main: after withdrawal the dialog returns": "PASS",
+ "chat: refusal sends nothing and adds no user bubble": "PASS",
+ "chat: refusal keeps the text in the composer": "PASS",
+ "chat: agreement continues the check": "PASS",
+ "shared: consent from the chat applies on the main page": "PASS"
+}

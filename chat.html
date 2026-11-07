@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AXA în chat — simulare de asistent anti-fraudă</title>
+<meta name="description" content="Concept: verificarea AXA sub forma unei conversații de chat. Trimite mesajul suspect și primești verdictul, semaforul de risc și pașii de urmat.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0B4F47" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1F2C34" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/worksans-regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/chat-assets/chat.css">
+</head>
+<body>
+<a class="skip" href="#msg">Sari la caseta de mesaj</a>
+<div class="stage">
+  <aside class="pitch" aria-labelledby="pitch-h">
+    <a class="back-home" href="/">← Înapoi la verificarea clasică</a>
+    <h1 id="pitch-h">AXA, direct <em>în chat</em>.</h1>
+    <p class="pitch-lead">Concept de asistent anti-fraudă în stil de mesagerie. Același motor de verificare ca pagina principală, aceleași date, același semafor, doar că primești răspunsul ca într-o conversație.</p>
+    <ol class="pitch-steps">
+      <li><span><b>Trimite</b> mesajul suspect sau o captură de ecran.</span></li>
+      <li><span><b>Primești verdictul</b> cu semaforul de risc și pasul cel mai sigur.</span></li>
+      <li><span><b>Întreabă mai departe</b>: de ce, ce e cu linkul, ce am verificat, ce faci dacă ai apăsat deja.</span></li>
+    </ol>
+    <p class="pitch-note">Este o <strong>simulare de interfață</strong>, nu un serviciu WhatsApp și nu un cont oficial. Mesajele merg la serverul AXA și, dacă analiza AI e activă, la Google Gemini, la fel ca pe pagina principală. Înainte de prima verificare îți cerem acordul. <a href="/#gdpr">Informarea GDPR</a></p>
+  </aside>
+
+  <section class="phone" aria-label="Conversație simulată cu asistentul AXA">
+    <header class="bar">
+      <a class="bar-back" href="/" aria-label="Înapoi la pagina principală"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <span class="avatar" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" class="av-bg"/><text x="20" y="25" text-anchor="middle" font-size="13.5" font-weight="700" font-family="Bricolage Grotesque, Work Sans, sans-serif" class="av-ink">A<tspan class="av-slash">X</tspan>A</text><rect x="11" y="28.5" width="18" height="2.5" rx="1" class="av-slash"/></svg></span>
+      <div class="bar-id">
+        <h2 class="bar-name">AXA Verificare</h2>
+        <p class="bar-sub" id="presence">asistent anti-fraudă · simulare</p>
+      </div>
+      <button class="bar-btn" id="reset" type="button" aria-label="Conversație nouă"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </header>
+
+    <div class="wall" id="wall">
+      <div class="log" id="log" role="log" aria-live="polite" aria-relevant="additions" aria-label="Mesajele conversației"></div>
+    </div>
+
+    <div class="chips" id="chips" role="group" aria-label="Răspunsuri rapide"></div>
+
+    <form class="composer" id="composer" method="post" action="/" novalidate>
+      <button class="cp-btn" id="attach" type="button" aria-label="Atașează o captură de ecran"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5l-7.8 7.8a5 5 0 0 1-7.1-7.1l8.5-8.5a3.3 3.3 0 0 1 4.7 4.7l-8.4 8.4a1.7 1.7 0 0 1-2.4-2.4l7.6-7.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+      <label class="sr" for="msg">Mesajul suspect</label>
+      <textarea id="msg" rows="1" maxlength="20000" spellcheck="false" autocomplete="off" placeholder="Lipește aici mesajul suspect…" aria-describedby="cp-hint"></textarea>
+      <button class="cp-send" id="send" type="submit" aria-label="Trimite spre verificare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z" fill="currentColor"/></svg></button>
+      <p class="sr" id="cp-hint">Enter trimite mesajul, Shift și Enter adaugă un rând nou.</p>
+    </form>
+  </section>
+</div>
+<dialog class="consent" id="consent" aria-labelledby="cs-h" aria-describedby="cs-d">
+  <form method="dialog" class="consent-in">
+    <h2 id="cs-h" tabindex="-1" autofocus>Ești de acord cu prelucrarea datelor?</h2>
+    <div id="cs-d">
+      <p>Ca să verific, trimit ce ai introdus (textul, linkurile sau captura) la <strong>serverul AXA</strong> și, dacă analiza AI este activă, la <strong>Google (Gemini)</strong>.</p>
+      <ul>
+        <li>Datele sunt folosite doar pentru verificare și explicarea rezultatului.</li>
+        <li>Mesajul nu este salvat într-o bază de date, iar linkurile nu sunt deschise.</li>
+        <li>Îți poți retrage acordul oricând, din secțiunea GDPR a paginii principale.</li>
+      </ul>
+      <p>Dacă nu ești de acord, verificarea se oprește și nu trimit nimic.</p>
+    </div>
+    <div class="consent-btns">
+      <button class="cs-btn" type="submit" value="yes">Sunt de acord, verifică</button>
+      <button class="cs-btn" type="submit" value="no">Nu sunt de acord</button>
+    </div>
+    <button class="cs-link" id="consent-info" type="button">Citește mai întâi informarea completă</button>
+  </form>
+</dialog>
+<script src="/chat-assets/chat.js"></script>
+</body>
+</html>

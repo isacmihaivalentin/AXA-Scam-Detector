@@ -1,0 +1,47 @@
+{
+  "minilm-original-ro": {
+    "startup_s": 22.567,
+    "peak_after_load_mib": 687.9,
+    "peak_end_mib": 723.5,
+    "median_ms": 65.0,
+    "p95_ms": 111.8,
+    "case_count": 22,
+    "torch_version": "2.15.0"
+  },
+  "minilm-en": {
+    "startup_s": 22.567,
+    "peak_after_load_mib": 687.9,
+    "peak_end_mib": 724.7,
+    "median_ms": 76.9,
+    "p95_ms": 115.0,
+    "case_count": 22,
+    "torch_version": "2.15.0"
+  },
+  "minilm-alt": {
+    "startup_s": 4.769,
+    "peak_after_load_mib": 558.9,
+    "peak_end_mib": 582.9,
+    "median_ms": 181.7,
+    "p95_ms": 265.4,
+    "case_count": 22,
+    "torch_version": "2.15.0"
+  },
+  "mdeberta-ro": {
+    "startup_s": 4.924,
+    "peak_after_load_mib": 1046.0,
+    "peak_end_mib": 1046.0,
+    "median_ms": 749.0,
+    "p95_ms": 1252.2,
+    "case_count": 22,
+    "torch_version": "2.15.0"
+  },
+  "mdeberta-en": {
+    "startup_s": 4.924,
+    "peak_after_load_mib": 1046.0,
+    "peak_end_mib": 1046.0,
+    "median_ms": 672.3,
+    "p95_ms": 1172.1,
+    "case_count": 22,
+    "torch_version": "2.15.0"
+  }
+}

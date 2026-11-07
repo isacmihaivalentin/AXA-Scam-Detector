@@ -1,0 +1,1 @@
+{"status": 200, "gemini": {"eligible": true, "requested": true, "status": "failed", "reason": "consequential_action_unresolved"}, "local": "completed", "risk": 0, "seconds": 9.93}

@@ -1,0 +1,1363 @@
+{
+ "base": "http://localhost:8765",
+ "note": "MOCK Gemini readings via tools/ui_fixture_server.py; deterministic layers real.",
+ "runs": [
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 320,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 27,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5571,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 334,
+    "recovery": 573,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 9276,
+   "errors": []
+  },
+  {
+   "state": "marketing",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 371,
+    "recovery": 610,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 39,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10049,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 341,
+    "recovery": 585,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 46,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 9890,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 400,
+    "recovery": 670,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 11863,
+   "errors": []
+  },
+  {
+   "state": "family",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 368,
+    "recovery": 580,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 50,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10099,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 302,
+    "recovery": 570,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 40,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8862,
+   "errors": []
+  },
+  {
+   "state": "protective",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 400,
+    "recovery": 589,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 37,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8432,
+   "errors": []
+  },
+  {
+   "state": "badurl",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 334,
+    "recovery": 602,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 42,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 9800,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 560,
+    "recovery": 830,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 49,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 11651,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 320,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 520,
+    "recovery": 787,
+    "viewport": 700
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10052,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 27,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 4915,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 273,
+    "recovery": 485,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8111,
+   "errors": []
+  },
+  {
+   "state": "marketing",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 310,
+    "recovery": 522,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 39,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8743,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 309,
+    "recovery": 498,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 46,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8666,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 310,
+    "recovery": 551,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10174,
+   "errors": []
+  },
+  {
+   "state": "family",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 307,
+    "recovery": 493,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 50,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8794,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 241,
+    "recovery": 453,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 40,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7731,
+   "errors": []
+  },
+  {
+   "state": "protective",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 310,
+    "recovery": 470,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 37,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7374,
+   "errors": []
+  },
+  {
+   "state": "badurl",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 273,
+    "recovery": 485,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 42,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8552,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 473,
+    "recovery": 714,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 49,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10052,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 407,
+    "recovery": 619,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8735,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 768,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 27,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3651,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 768,
+   "firstScreen": {
+    "verdict": 82,
+    "action": 213,
+    "recovery": 387,
+    "viewport": 1024
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6076,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 768,
+   "firstScreen": {
+    "verdict": 82,
+    "action": 250,
+    "recovery": 453,
+    "viewport": 1024
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7437,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 768,
+   "firstScreen": {
+    "verdict": 82,
+    "action": 213,
+    "recovery": 387,
+    "viewport": 1024
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 40,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5741,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 1440,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 30,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3227,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 235,
+    "recovery": 419,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5016,
+   "errors": []
+  },
+  {
+   "state": "marketing",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 272,
+    "recovery": 456,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 42,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5417,
+   "errors": []
+  },
+  {
+   "state": "suspicious",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 272,
+    "recovery": 454,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 49,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5560,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 313,
+    "recovery": 525,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 54,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6384,
+   "errors": []
+  },
+  {
+   "state": "family",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 281,
+    "recovery": 465,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 53,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5750,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 203,
+    "recovery": 387,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 43,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 4838,
+   "errors": []
+  },
+  {
+   "state": "protective",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 272,
+    "recovery": 425,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 40,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 4635,
+   "errors": []
+  },
+  {
+   "state": "badurl",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 235,
+    "recovery": 419,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 45,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5378,
+   "errors": []
+  },
+  {
+   "state": "ai_timeout",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 396,
+    "recovery": 608,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 52,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6321,
+   "errors": []
+  },
+  {
+   "state": "ai_off",
+   "theme": "light",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 350,
+    "recovery": 534,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 44,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5438,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "light",
+   "w": 1920,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 30,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3227,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "light",
+   "w": 1920,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 235,
+    "recovery": 419,
+    "viewport": 1080
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5016,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "light",
+   "w": 1920,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 313,
+    "recovery": 525,
+    "viewport": 1080
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 54,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6384,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "light",
+   "w": 1920,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 203,
+    "recovery": 387,
+    "viewport": 1080
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 43,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 4838,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "dark",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 27,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 4915,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "dark",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 273,
+    "recovery": 485,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 38,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8111,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "dark",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 310,
+    "recovery": 551,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 10174,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "dark",
+   "w": 390,
+   "firstScreen": {
+    "verdict": 93,
+    "action": 241,
+    "recovery": 453,
+    "viewport": 844
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 40,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 7731,
+   "errors": []
+  },
+  {
+   "state": "home",
+   "theme": "dark",
+   "w": 1440,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 30,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 3227,
+   "errors": []
+  },
+  {
+   "state": "benign",
+   "theme": "dark",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 235,
+    "recovery": 419,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 41,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 5016,
+   "errors": []
+  },
+  {
+   "state": "critical",
+   "theme": "dark",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 313,
+    "recovery": 525,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 54,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 6384,
+   "errors": []
+  },
+  {
+   "state": "inconclusive",
+   "theme": "dark",
+   "w": 1440,
+   "firstScreen": {
+    "verdict": 91,
+    "action": 203,
+    "recovery": 387,
+    "viewport": 900
+   },
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 43,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 4838,
+   "errors": []
+  },
+  {
+   "state": "text200-critical",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [],
+   "controlsUnder44": 0,
+   "controls": 51,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 40330
+  },
+  {
+   "state": "error-server_error",
+   "w": 390,
+   "inputPreserved": true,
+   "err": {
+    "text": "Nu am putut finaliza verificareaServerul nu a putut finaliza analiza. Textul tău a rămas în casetă.Încearcă din nouMergi la casetă",
+    "role": "alert",
+    "focused": "err"
+   }
+  },
+  {
+   "state": "error-ocr_fail",
+   "w": 390,
+   "inputPreserved": true,
+   "err": {
+    "text": "Nu am putut citi capturaNu am putut citi captura acum. Încearcă din nou sau lipește textul.Lipește textul manualAlege altă captură",
+    "role": "alert",
+    "focused": "err"
+   }
+  },
+  {
+   "state": "ocr-done",
+   "w": 390,
+   "overflowX": 0,
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "smallTextCount": 0,
+   "smallText": [],
+   "smallTargets": [
+    "ocrok:20x20",
+    "hon:20x20"
+   ],
+   "controlsUnder44": 0,
+   "controls": 39,
+   "unnamed": [],
+   "headingSkips": 0,
+   "h1": 1,
+   "infiniteAnimations": 0,
+   "pageHeight": 8393
+  }
+ ],
+ "keyboard": [
+  "A:Sari la caseta de ",
+  "A:SCAM DETECTOR",
+  "A:Am pățit deja ceva",
+  "disp:Afișare",
+  "t",
+  "go:Verifică mesajul",
+  "up:Încarcă o captură ",
+  "A:Detalii",
+  "BUTTON:Colet",
+  "BUTTON:Bancă",
+  "BUTTON:Vânzare online",
+  "BUTTON:Rudă în necaz",
+  "BUTTON:Job cu taxă",
+  "BUTTON:Notificare obișnui",
+  "SUMMARY:Am deschis doar li",
+  "SUMMARY:Am scris o parolă"
+ ],
+ "motionWhileBusy": []
+}

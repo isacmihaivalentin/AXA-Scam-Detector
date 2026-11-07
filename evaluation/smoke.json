@@ -1,0 +1,16 @@
+[
+  {"id":"money-virament", "want":["request_money"], "text":"Îmi poți vira suma în cont, te rog?"},
+  {"id":"money-invoice", "want":["request_money"], "benign":true, "text":"Factura de internet pe luna mai a fost emisă. Vă rugăm să achitați soldul de 80 lei prin aplicația furnizorului."},
+  {"id":"money-quote", "want":["educational_example"], "safe":true, "text":"La curs am analizat mesajul fals «Îmi poți face un virament pentru cheltuieli?». Acesta este un exemplu, nu o cerere reală."},
+  {"id":"warning-forward", "want":["protective_warning"], "safe":true, "text":"Ține codul de verificare numai pentru tine. În niciun caz să nu dai nimănui parola ori CVV-ul."},
+  {"id":"warning-photo", "want":["protective_warning"], "safe":true, "text":"Vă recomandăm să nu încărcați poze cu fața sau spatele cardului bancar, nici măcar dacă vi se solicită pe chat."},
+  {"id":"warning-mixed", "want":["request_credentials","protective_warning"], "text":"Nu divulga parola nimănui. Ca să rezolvăm blocarea, spune-mi aici codul de autentificare de pe telefon."},
+  {"id":"otp-paraphrase", "want":["request_credentials"], "text":"Te rog să îmi citești cifrele din mesajul primit de la bancă, am nevoie de codul de verificare ca să continui."},
+  {"id":"document-upload", "want":["request_sensitive_documents"], "text":"Ca să finalizăm dosarul, încărcați o copie a cărții de identitate unde se vede CNP-ul."},
+  {"id":"photo-english", "want":["request_card_photo"], "text":"Fă un screenshot cu fața și verso-ul cardului bancar și pune imaginea aici în chat, mersi."},
+  {"id":"advance-grant", "want":["advance_fee_condition","promise_payout"], "text":"Cererea de grant a fost aprobată. Banii vor intra la dvs. după ce ne virați garanția de eliberare."},
+  {"id":"legit-refund", "want":["promise_payout"], "benign":true, "text":"Veți primi rambursarea în contul din care ați plătit. Nu trebuie să achitați nimic ca să o primiți."},
+  {"id":"family-benign", "want":["request_money"], "benign":true, "text":"Tată, am rămas fără bani pentru bilet. Îmi virezi 30 lei? Sună-mă pe numărul meu obișnuit."},
+  {"id":"normal-chat", "want":["unknown"], "benign":true, "text":"Salut, ne vedem la piață pe la prânz? Poate vine și Ioana."},
+  {"id":"neutral-otp", "want":["unknown"], "safe":true, "text":"OTP înseamnă o parolă de unică folosință. Funcția este disponibilă în setările aplicației."}
+]

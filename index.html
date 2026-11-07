@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AXA Scam Detector — verifică un mesaj înainte să răspunzi</title>
+<meta name="description" content="Verifică un SMS, un email, un link sau o captură de ecran înainte să acționezi. Afli ce cere mesajul, ce am putut verifica și ce să faci acum.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5ECDD" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121920" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/bricolage-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/worksans-regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/axa.css">
+</head>
+<body>
+<a class="skip" href="#t">Sari la caseta de verificare</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#verifica" aria-label="AXA Scam Detector, începutul paginii">
+      <svg viewBox="148 300 604 236" aria-hidden="true" focusable="false"><g class="logo-ink"><polygon points="150,482 214,309 262,309 322,482 290,482 238,343 183,482"/><polygon points="578,482 642,309 690,309 750,482 718,482 665,343 611,482"/><polygon points="365,309 413,309 445,349 425,387"/><polygon points="473,403 536,482 490,482 457,437"/></g><polygon class="logo-accent" points="365,482 410,482 536,309 491,309"/><rect class="logo-accent" x="150" y="512" width="34" height="9"/><text class="logo-ink" x="198" y="526" font-size="36" letter-spacing="11" font-family="Work Sans, system-ui, sans-serif" font-weight="700">SCAM DETECTOR</text></svg>
+    </a>
+    <nav class="nav" aria-label="Navigare principală">
+      <a href="#verifica">Verifică</a><a href="#semne">Semne de fraudă</a><a href="#confidentialitate">Confidențialitate</a><a href="/education">AXA for Education</a>
+    </nav>
+    <div class="top-actions">
+      <a class="help-link" href="#ajutor"><span class="long">Am pățit deja ceva</span><span class="short" aria-hidden="true">Ajutor</span></a>
+      <button class="btn btn-ghost" id="disp" type="button" aria-expanded="false" aria-controls="disp-panel"><span class="lbl-wide">Afișare</span><span class="lbl-narrow">Meniu</span></button>
+    </div>
+  </div>
+  <div class="disp-panel" id="disp-panel" hidden>
+    <nav class="wrap menu-links" aria-label="Navigare principală">
+      <a href="#verifica">Verifică</a><a href="#semne">Semne de fraudă</a><a href="#confidentialitate">Confidențialitate</a><a href="/education">AXA for Education</a>
+    </nav>
+    <div class="wrap disp-in">
+      <div class="disp-group" role="group" aria-labelledby="ts-l"><span id="ts-l">Mărimea textului</span>
+        <button class="btn btn-ghost" id="fm" type="button" aria-label="Micșorează textul">A−</button><output id="fz" aria-live="polite">100%</output><button class="btn btn-ghost" id="fp" type="button" aria-label="Mărește textul">A+</button></div>
+      <fieldset class="disp-group"><legend>Tema</legend>
+        <label><input type="radio" name="theme" value="auto" checked> Ca dispozitivul</label>
+        <label><input type="radio" name="theme" value="light"> Luminoasă</label>
+        <label><input type="radio" name="theme" value="dark"> Întunecată</label></fieldset>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap intro" id="verifica" aria-labelledby="intro-h">
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 560" preserveAspectRatio="xMaxYMid slice"><polygon class="a3" points="250,560 360,560 520,40 520,0 470,0"/><polygon class="a1" points="120,560 230,560 450,0 340,0"/><polygon class="a2" points="20,560 70,560 290,0 240,0"/></svg>
+    </div>
+    <div class="intro-copy">
+      <h1 id="intro-h">Nu apăsa încă. <em>Verifică</em> mai întâi mesajul.</h1>
+      <p class="lead">Lipește un SMS, un email sau un link ori încarcă o captură. Îți spunem pe înțeles ce cere mesajul, ce am găsit și ce să faci acum.</p>
+      <ul class="expect" aria-label="Ce primești după verificare">
+        <li><span><strong>Un verdict clar</strong>, cu locul mesajului pe o scală de la verde la roșu când dovezile permit.</span></li>
+        <li><span><strong>Pasul cel mai sigur</strong> de făcut acum și ajutor dacă ai apăsat deja.</span></li>
+        <li><span><strong>Dovezile</strong>, când vrei să le vezi: ce am găsit în text și unde duce linkul.</span></li>
+      </ul>
+    </div>
+
+    <form class="desk" id="form" method="post" action="/" novalidate>
+      <label class="desk-label" for="t">Mesajul primit <span>SMS, email, WhatsApp sau un link</span></label>
+      <textarea id="t" name="text" maxlength="20000" rows="6" spellcheck="false" autocomplete="off" aria-describedby="hint privacy" placeholder="De exemplu: „Coletul tău nu a putut fi livrat. Plătește taxa aici: …”"></textarea>
+      <p class="hint" id="hint">Poți șterge din text codurile, numerele de card sau CNP-ul. Nu contează pentru verificare.</p>
+
+      <div class="file-chip" id="chip" hidden></div>
+      <div class="ocr-note" id="ocrnote" hidden>
+        <p><strong>Textul de mai sus a fost citit din captura ta.</strong> Compară-l cu imaginea, mai ales cifrele și adresele. Dacă îl corectezi, apasă din nou „Verifică mesajul”.</p>
+        <label class="check"><input type="checkbox" id="ocrok"> Am verificat textul și corespunde capturii</label>
+      </div>
+
+      <div class="desk-actions">
+        <button class="btn btn-cta" id="go" type="submit">Verifică mesajul</button>
+        <button class="btn btn-on-dark" id="up" type="button">Încarcă o captură</button>
+        <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+        <button class="btn-text" id="cl" type="button" hidden>Golește caseta</button>
+      </div>
+      <p class="drop-hint" id="drophint">Poți și să tragi o captură de ecran aici.</p>
+
+      <div class="busy" id="busy" role="status" aria-live="polite"></div>
+      <div class="error-box" id="err" role="alert" tabindex="-1" hidden></div>
+
+      <p class="privacy" id="privacy"><span class="privacy-k">Unde ajunge textul:</span> <span id="privtext">la serverul AXA și, dacă analiza AI este activă, la Google Gemini, pentru interpretare.</span> Nu deschidem linkurile și nu păstrăm mesajul. Îți cerem acordul înainte de prima verificare. <a href="#gdpr">Detalii GDPR</a></p>
+    </form>
+
+    <div class="examples" role="group" aria-labelledby="ex-l">
+      <span id="ex-l">Nu ai un mesaj la îndemână? Încearcă un exemplu:</span>
+      <button type="button" data-p="0">Colet</button><button type="button" data-p="1">Bancă</button><button type="button" data-p="2">Vânzare online</button><button type="button" data-p="3">Rudă în necaz</button><button type="button" data-p="4">Job cu taxă</button><button type="button" data-p="5">Notificare obișnuită</button>
+    </div>
+  </section>
+
+  <section class="wrap result" id="out" aria-labelledby="res-h" hidden></section>
+  <div class="sr" id="live" role="status" aria-live="polite"></div>
+
+  <section class="band band-ink" id="ajutor" aria-labelledby="help-h">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="help-h"><span class="slash" aria-hidden="true"></span>Ai apăsat, ai trimis date sau ai plătit?</h2>
+        <p>Se întâmplă oricui, mai ales când mesajul arată credibil. Contează ce faci acum: alege ce s-a întâmplat și urmează pașii.</p>
+      </div>
+      <div class="recovery" id="recovery">
+        <details data-k="opened"><summary><span>Am deschis doar linkul</span></summary><ol>
+          <li>Închide pagina și nu te întoarce la ea.</li>
+          <li>Dacă nu ai scris nimic acolo și nu ai descărcat nimic, riscul e mult mai mic. Nu mai urma pașii din mesaj.</li>
+          <li>Dacă s-a descărcat un fișier, nu-l deschide și șterge-l.</li></ol></details>
+        <details data-k="password"><summary><span>Am scris o parolă</span></summary><ol>
+          <li>Schimbă parola acum, din aplicația sau site-ul oficial, deschise de tine, de pe un dispozitiv în care ai încredere.</li>
+          <li>Schimb-o și în alte conturi unde folosești aceeași parolă.</li>
+          <li>Activează verificarea în doi pași și închide sesiunile pe care nu le recunoști.</li></ol></details>
+        <details data-k="code"><summary><span>Am dat un cod primit prin SMS sau am aprobat ceva</span></summary><ol>
+          <li>Sună imediat banca, la numărul de pe spatele cardului sau din aplicația oficială. Cere blocarea operațiunilor sau a cardului.</li>
+          <li>Verifică ultimele tranzacții și semnalează ce nu recunoști.</li>
+          <li>Dacă era un cod de WhatsApp sau de alt cont, intră în cont, schimbă parola și activează verificarea în doi pași.</li></ol></details>
+        <details data-k="card"><summary><span>Am dat datele cardului</span></summary><ol>
+          <li>Blochează cardul din aplicația băncii sau sunând la numărul de pe spatele lui.</li>
+          <li>Spune băncii ce s-a întâmplat și contestă plățile pe care nu le-ai făcut.</li>
+          <li>Urmărește extrasul în următoarele săptămâni.</li></ol></details>
+        <details data-k="paid"><summary><span>Am trimis bani</span></summary><ol>
+          <li>Sună cât mai repede banca sau serviciul prin care ai plătit și cere oprirea sau returnarea plății. Nu e garantat, dar timpul contează.</li>
+          <li>Păstrează dovada plății și conversația.</li>
+          <li>Depune plângere la Poliție.</li></ol></details>
+        <details data-k="installed"><summary><span>Am instalat o aplicație sau am dat acces la telefon ori calculator</span></summary><ol>
+          <li>Deconectează dispozitivul de la internet și închide aplicația de control (de exemplu AnyDesk, TeamViewer).</li>
+          <li>Dezinstaleaz-o. Sună banca de pe alt telefon.</li>
+          <li>Schimbă parolele de pe un alt dispozitiv. Dacă nu ești sigur ce s-a instalat, cere ajutorul unui specialist.</li></ol></details>
+        <details data-k="documents"><summary><span>Am trimis poze cu buletinul sau alte acte</span></summary><ol>
+          <li>Anunță Poliția și banca: actele pot fi folosite pentru conturi sau credite în numele tău.</li>
+          <li>Poți verifica la Biroul de Credit dacă apar credite pe care nu le-ai cerut.</li></ol></details>
+        <details data-k="called"><summary><span>Am sunat la numărul din mesaj</span></summary><ol>
+          <li>Nu mai suna înapoi. Dacă era un număr cu tarif special, verifică factura și anunță operatorul.</li>
+          <li>Dacă în apel ai dat coduri, date de card sau parole, urmează pașii pentru acea situație de mai sus.</li></ol></details>
+        <div class="always">
+          <p><strong>În orice situație:</strong> păstrează dovezile (capturi, numere, linkuri, dovezi de plată), raportează la DNSC la numărul 1911 sau pe dnsc.ro și spune-le celor apropiați. Sună la 112 doar dacă e o urgență.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-sand" id="semne" aria-labelledby="signs-h">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="signs-h"><span class="slash" aria-hidden="true"></span>Cinci semne că e o înșelătorie</h2>
+        <p>Un singur semn nu dovedește o fraudă, dar e un motiv să te oprești. Mai multe semne împreună sunt un avertisment serios.</p>
+      </div>
+      <ol class="signs">
+        <li><span class="num" aria-hidden="true">1</span><h3>Te grăbește</h3><p>„În 24 de ore”, „imediat”, „ultima șansă”. Presiunea te împiedică să verifici.</p></li>
+        <li><span class="num" aria-hidden="true">2</span><h3>Te sperie</h3><p>Cont blocat, colet returnat, amendă, o rudă la necaz.</p></li>
+        <li><span class="num" aria-hidden="true">3</span><h3>Cere date secrete sau acces</h3><p>Parole, PIN, CVV, coduri primite prin SMS, aprobarea unei operațiuni sau o aplicație de control. Băncile și firmele serioase nu ți le cer prin mesaj.</p></li>
+        <li><span class="num" aria-hidden="true">4</span><h3>Linkul nu e al firmei</h3><p>Adresa seamănă cu a firmei, dar domeniul real e altul: litere schimbate, cuvinte lipite, alte terminații.</p></li>
+        <li><span class="num" aria-hidden="true">5</span><h3>Plătești ca să primești</h3><p>O taxă pentru un premiu, un credit, un job sau o livrare. Beneficiul promis de obicei nu vine.</p></li>
+      </ol>
+      <p class="rule"><span class="slash" aria-hidden="true"></span><span><strong>Regula de aur:</strong> nu folosi linkul sau numărul din mesaj. Deschide singur aplicația ori site-ul oficial, sau sună la un număr pe care îl știi deja.</span></p>
+    </div>
+  </section>
+
+  <section class="wrap band" id="confidentialitate" aria-labelledby="priv-h">
+    <div class="band-head"><h2 id="priv-h"><span class="slash" aria-hidden="true"></span>Ce se întâmplă cu mesajul tău</h2></div>
+    <ul class="facts-list">
+      <li><strong>Serverul AXA</strong> primește textul sau captura ca să le analizeze. Nu le salvăm într-o bază de date.</li>
+      <li><strong>Google Gemini</strong> primește textul (și captura, pentru citire) când analiza AI este configurată pe server. Furnizorul le prelucrează conform propriilor condiții.</li>
+      <li><strong>Linkurile nu sunt deschise.</strong> Le analizăm doar ca text. Dacă serverul are Google Web Risk configurat, unele adrese pot fi căutate în lista acestui furnizor.</li>
+      <li><strong>Înainte să trimiți</strong> poți șterge datele personale care nu contează pentru verificare: coduri, numere de card, CNP.</li>
+    </ul>
+    <div class="history" id="istoric">
+      <h3>Istoric pe acest dispozitiv</h3>
+      <p>Oprit implicit. Dacă îl pornești, păstrăm pe acest dispozitiv doar data și rezultatul, niciodată textul mesajului, linkurile sau capturile.</p>
+      <label class="check"><input type="checkbox" id="hon"> Păstrează un istoric pe acest dispozitiv</label>
+      <ul class="hist-list" id="hl"></ul>
+      <button class="btn-text" id="hc" type="button" hidden>Șterge istoricul</button>
+    </div>
+  </section>
+
+  <section class="band band-sand gdpr" id="gdpr" aria-labelledby="gdpr-h">
+    <div class="wrap">
+      <div class="band-head">
+        <h2 id="gdpr-h" tabindex="-1"><span class="slash" aria-hidden="true"></span>Protecția datelor personale (GDPR)</h2>
+        <p>Ce date prelucrăm când verifici un mesaj, de ce, cui ajung și ce drepturi ai, conform Regulamentului (UE) 2016/679 (GDPR).</p>
+      </div>
+      <div class="gdpr-grid">
+        <section class="gdpr-card" aria-labelledby="g1"><h3 id="g1">Cine prelucrează datele</h3>
+          <p>Echipa AXA Scam Detector, care operează acest serviciu. <span class="gdpr-todo">Denumirea completă, adresa și datele de contact pentru protecția datelor se completează înainte de lansarea publică.</span></p></section>
+        <section class="gdpr-card" aria-labelledby="g2"><h3 id="g2">Ce date</h3>
+          <ul>
+            <li>Textul pe care îl lipești, cu tot ce conține: nume, numere de telefon, adrese, linkuri sau coduri.</li>
+            <li>Capturile de ecran pe care le încarci.</li>
+            <li>Date tehnice ale conexiunii, de exemplu adresa IP și ora cererii, care pot apărea în jurnalele serverului.</li>
+            <li>Pe dispozitivul tău rămân doar acordul tău, tema, mărimea textului și, numai dacă îl pornești, istoricul fără textul mesajelor.</li>
+          </ul></section>
+        <section class="gdpr-card" aria-labelledby="g3"><h3 id="g3">De ce și pe ce temei</h3>
+          <p><strong>Scop:</strong> să verificăm mesajul pentru indicii de fraudă și să îți explicăm rezultatul. Nu folosim datele pentru reclame, profilare sau vânzare.</p>
+          <p><strong>Temei legal:</strong> consimțământul tău (art. 6 alin. (1) lit. a) GDPR), cerut înainte de prima verificare. Dacă nu ești de acord, nu trimitem nimic și verificarea nu are loc.</p></section>
+        <section class="gdpr-card" aria-labelledby="g4"><h3 id="g4">Cui ajung datele</h3>
+          <ul>
+            <li><strong>Serverul AXA</strong>, care face analiza.</li>
+            <li><strong>Google (Gemini)</strong>, pentru interpretarea textului și citirea capturilor, când analiza AI este activă.</li>
+            <li><strong>Google Web Risk</strong>, pentru unele adrese, dacă serviciul este configurat.</li>
+          </ul>
+          <p>Google prelucrează datele conform propriilor condiții, iar prelucrarea poate avea loc și în afara Spațiului Economic European, cu garanțiile prevăzute de GDPR.</p></section>
+        <section class="gdpr-card" aria-labelledby="g5"><h3 id="g5">Cât timp le păstrăm</h3>
+          <p>AXA nu salvează textul sau capturile într-o bază de date. Le folosim doar cât durează analiza. Jurnalele tehnice ale serverului se păstrează doar cât este necesar pentru funcționare și securitate. Datele de pe dispozitivul tău rămân până le ștergi.</p></section>
+        <section class="gdpr-card" aria-labelledby="g6"><h3 id="g6">Drepturile tale</h3>
+          <p>Ai dreptul de acces, rectificare, ștergere, restricționare, opoziție și portabilitate. Îți poți retrage acordul oricând; retragerea nu afectează verificările făcute înainte. Ai dreptul să depui plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP, dataprotection.ro).</p>
+          <p>Rezultatul este o evaluare automată orientativă, fără efecte juridice. Decizia îți aparține.</p></section>
+      </div>
+      <div class="gdpr-consent">
+        <p id="gdpr-state" tabindex="-1" aria-live="polite"></p>
+        <button class="btn btn-ghost" id="gdpr-revoke" type="button" hidden>Retrage acordul</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>AXA oferă o evaluare orientativă, bazată pe dovezi, nu o garanție. Analiza linkurilor este pasivă: nu deschidem paginile și nu verificăm proprietarul, vechimea sau certificatele domeniilor. Când ai dubii, contactează organizația pe canalele ei oficiale.</p>
+    <nav aria-label="Navigare secundară"><a href="#verifica">Verifică un mesaj</a><a href="#ajutor">Am pățit deja ceva</a><a href="#semne">Semne de fraudă</a><a href="#confidentialitate">Confidențialitate</a><a href="#gdpr">Protecția datelor (GDPR)</a><a href="/education">AXA for Education</a></nav>
+  </div>
+</footer>
+<dialog class="consent" id="consent" aria-labelledby="cs-h" aria-describedby="cs-d">
+  <form method="dialog" class="consent-in">
+    <h2 id="cs-h" tabindex="-1" autofocus>Ești de acord cu prelucrarea datelor?</h2>
+    <div id="cs-d">
+      <p>Ca să verificăm, trimitem ce ai introdus (textul, linkurile sau captura) la <strong>serverul AXA</strong> și, dacă analiza AI este activă, la <strong>Google (Gemini)</strong>.</p>
+      <ul>
+        <li>Folosim datele doar pentru verificare și explicarea rezultatului.</li>
+        <li>Nu salvăm mesajul într-o bază de date și nu deschidem linkurile.</li>
+        <li>Îți poți retrage acordul oricând, din secțiunea GDPR.</li>
+      </ul>
+      <p>Dacă nu ești de acord, verificarea se oprește și nu trimitem nimic.</p>
+    </div>
+    <div class="consent-btns">
+      <button class="btn btn-choice btn-yes" type="submit" value="yes">Sunt de acord, verifică</button>
+      <button class="btn btn-choice" type="submit" value="no">Nu sunt de acord</button>
+    </div>
+    <button class="btn-text" id="consent-info" type="button">Citește mai întâi informarea completă</button>
+  </form>
+</dialog>
+<script src="/assets/app.js"></script>
+</body>
+</html>

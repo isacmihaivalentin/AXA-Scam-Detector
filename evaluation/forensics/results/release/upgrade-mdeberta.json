@@ -1,0 +1,2220 @@
+{
+  "warmup_ms": 9977.39,
+  "warmup_status": "completed",
+  "peak_process_mib": 1898.7,
+  "live_gemini": false,
+  "isolate_model_cases": true,
+  "post_timeout_drains": [
+    {
+      "id": "RH-004",
+      "drained": true,
+      "ms": 2373.18
+    },
+    {
+      "id": "RH-009",
+      "drained": true,
+      "ms": 285.02
+    },
+    {
+      "id": "RH-010",
+      "drained": true,
+      "ms": 136.1
+    },
+    {
+      "id": "RH-018",
+      "drained": true,
+      "ms": 672.29
+    },
+    {
+      "id": "RH-019",
+      "drained": true,
+      "ms": 1547.22
+    },
+    {
+      "id": "RH-033",
+      "drained": true,
+      "ms": 128.61
+    }
+  ],
+  "metrics": {
+    "cases": 39,
+    "scam_recall": {
+      "n": 4,
+      "of": 21,
+      "rate": 0.1905
+    },
+    "scam_precision": {
+      "n": 4,
+      "of": 6,
+      "rate": 0.6667
+    },
+    "critical_credential_recall": {
+      "n": 3,
+      "of": 8,
+      "rate": 0.375
+    },
+    "non_scam_false_positive": {
+      "n": 2,
+      "of": 18,
+      "rate": 0.1111
+    },
+    "protective_false_positive": {
+      "n": 1,
+      "of": 7,
+      "rate": 0.1429
+    },
+    "normal_finance_false_positive": {
+      "n": 0,
+      "of": 4,
+      "rate": 0.0
+    },
+    "commercial_false_positive": {
+      "n": 0,
+      "of": 3,
+      "rate": 0.0
+    },
+    "mechanisms": {
+      "advance_payment": {
+        "recall": {
+          "n": 0,
+          "of": 4,
+          "rate": 0.0
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      },
+      "credential_harvesting": {
+        "recall": {
+          "n": 4,
+          "of": 8,
+          "rate": 0.5
+        },
+        "precision": {
+          "n": 4,
+          "of": 6,
+          "rate": 0.6667
+        }
+      },
+      "family_impersonation": {
+        "recall": {
+          "n": 0,
+          "of": 3,
+          "rate": 0.0
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      },
+      "institutional_impersonation": {
+        "recall": {
+          "n": 0,
+          "of": 3,
+          "rate": 0.0
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      },
+      "software_or_account_abuse": {
+        "recall": {
+          "n": 0,
+          "of": 3,
+          "rate": 0.0
+        },
+        "precision": {
+          "n": 0,
+          "of": 0,
+          "rate": null
+        }
+      }
+    },
+    "inconclusive": {
+      "n": 24,
+      "of": 39,
+      "rate": 0.6154
+    },
+    "unestimated": {
+      "n": 11,
+      "of": 39,
+      "rate": 0.2821
+    },
+    "consequential_eligible": {
+      "n": 8,
+      "of": 25,
+      "rate": 0.32
+    },
+    "consequential_escalated": {
+      "n": 0,
+      "of": 25,
+      "rate": 0.0
+    },
+    "gemini_eligible": {
+      "n": 11,
+      "of": 39,
+      "rate": 0.2821
+    },
+    "gemini_requests": {
+      "n": 0,
+      "of": 39,
+      "rate": 0.0
+    },
+    "gemini_completed": {
+      "n": 0,
+      "of": 0,
+      "rate": null
+    },
+    "gemini_failed": {
+      "n": 0,
+      "of": 0,
+      "rate": null
+    },
+    "request_ms": {
+      "median": 4863.08,
+      "p95": 8017.54
+    },
+    "gemini_ms": null,
+    "model_cases": {
+      "completed": 33,
+      "timeout": 6
+    },
+    "model_has_author_intent": {
+      "n": 5,
+      "of": 21,
+      "rate": 0.2381
+    },
+    "model_unsupported_candidate_cases": 11,
+    "model_scope_conflict_cases": 14
+  },
+  "rows": [
+    {
+      "id": "RH-001",
+      "group": "self_initiated_study_portal_signin",
+      "truth": "benign",
+      "mechanism": "ordinary",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "account_verification_request",
+        "request_login_approval"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4314.49
+    },
+    {
+      "id": "RH-002",
+      "group": "retained_bank_card_pin_in_two_parts",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 70,
+      "risk_label": "critical",
+      "alert": true,
+      "risk_status": "estimated",
+      "risk_estimate": 70,
+      "assessment": "critical",
+      "confidence": "medium",
+      "predicted_mechanisms": [
+        "credential_harvesting"
+      ],
+      "mechanism_ids": [
+        "credential_disclosure"
+      ],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 2,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_credentials",
+        "request_money",
+        "request_money",
+        "request_credentials",
+        "request_login_approval",
+        "protective_warning"
+      ],
+      "local_correct_intent": true,
+      "rule_model_agreement": "agreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_credentials",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_credentials",
+          "status": "tentative",
+          "reason": "whole_message_needs_localization"
+        },
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        },
+        {
+          "label": "protective_warning",
+          "status": "rejected",
+          "reason": "insufficient_context"
+        },
+        {
+          "label": "protective_warning",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 6330.09
+    },
+    {
+      "id": "RH-003",
+      "group": "pet_adoption_transport_prepayment",
+      "truth": "scam",
+      "mechanism": "advance_payment",
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "request_money",
+        "request_login_approval",
+        "unavailable_for_call"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "agreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        },
+        {
+          "label": "unavailable_for_call",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 5178.58
+    },
+    {
+      "id": "RH-004",
+      "group": "revoke_email_permission_after_consent",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "timeout",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "not_compared",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 8016.43
+    },
+    {
+      "id": "RH-005",
+      "group": "calendar_sync_oauth_with_mailbox_scope",
+      "truth": "scam",
+      "mechanism": "software_or_account_abuse",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [
+        {
+          "host": "sincronizare-panel.test",
+          "registrable": "sincronizare-panel.test",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 5273.48
+    },
+    {
+      "id": "RH-006",
+      "group": "design_app_trial_promotion",
+      "truth": "commercial",
+      "mechanism": "commercial",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "reward_offer"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "reward_offer",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4037.45
+    },
+    {
+      "id": "RH-007",
+      "group": "family_cash_drop_at_building_entrance",
+      "truth": "scam",
+      "mechanism": "family_impersonation",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "promise_payout",
+        "advance_fee_condition",
+        "organization_impersonation_claim"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "agreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "promise_payout",
+          "status": "rejected",
+          "reason": "insufficient_context"
+        },
+        {
+          "label": "advance_fee_condition",
+          "status": "tentative",
+          "reason": "value_or_dependency_unclear"
+        },
+        {
+          "label": "organization_impersonation_claim",
+          "status": "rejected",
+          "reason": "insufficient_context"
+        },
+        {
+          "label": "commercial_solicitation",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4863.08
+    },
+    {
+      "id": "RH-008",
+      "group": "routine_employee_expense_reimbursement",
+      "truth": "benign",
+      "mechanism": "normal_finance",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "advance_fee_condition",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4846.6
+    },
+    {
+      "id": "RH-009",
+      "group": "esim_activation_profile_handoff",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "timeout",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "not_compared",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 8015.13
+    },
+    {
+      "id": "RH-010",
+      "group": "transit_dispute_premium_call_loop",
+      "truth": "scam",
+      "mechanism": "institutional_impersonation",
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "timeout",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "not_compared",
+      "reasons": [],
+      "hosts": [
+        {
+          "host": "dispecer-traseu.test",
+          "registrable": "dispecer-traseu.test",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 8017.1
+    },
+    {
+      "id": "RH-011",
+      "group": "legitimate_esim_local_activation_boundary",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 5138.8
+    },
+    {
+      "id": "RH-012",
+      "group": "stolen_investment_recovery_release_payment",
+      "truth": "scam",
+      "mechanism": "advance_payment",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "request_money",
+        "request_money",
+        "advance_fee_condition"
+      ],
+      "local_correct_intent": true,
+      "rule_model_agreement": "agreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "advance_fee_condition",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 5010.71
+    },
+    {
+      "id": "RH-013",
+      "group": "browser_password_store_csv_upload",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 70,
+      "risk_label": "critical",
+      "alert": true,
+      "risk_status": "estimated",
+      "risk_estimate": 70,
+      "assessment": "critical",
+      "confidence": "high",
+      "predicted_mechanisms": [
+        "credential_harvesting"
+      ],
+      "mechanism_ids": [
+        "credential_disclosure"
+      ],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [
+        {
+          "host": "passwords.csv",
+          "registrable": null,
+          "protocol": null,
+          "lookalike": null
+        },
+        {
+          "host": "profil-nou.test",
+          "registrable": "profil-nou.test",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 3800.11
+    },
+    {
+      "id": "RH-014",
+      "group": "existing_contract_manual_installment",
+      "truth": "benign",
+      "mechanism": "normal_finance",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3350.38
+    },
+    {
+      "id": "RH-015",
+      "group": "pension_agent_blank_proxy_form",
+      "truth": "scam",
+      "mechanism": "institutional_impersonation",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "account_verification_request",
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": true,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4651.06
+    },
+    {
+      "id": "RH-016",
+      "group": "quoted_export_instruction_in_training_review",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 54,
+      "risk_label": "suspicious",
+      "alert": true,
+      "risk_status": "estimated",
+      "risk_estimate": 54,
+      "assessment": "suspicious",
+      "confidence": "medium",
+      "predicted_mechanisms": [
+        "credential_harvesting"
+      ],
+      "mechanism_ids": [
+        "credential_disclosure"
+      ],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_credentials",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_credentials",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3674.39
+    },
+    {
+      "id": "RH-017",
+      "group": "wallet_unlimited_spend_authorization",
+      "truth": "scam",
+      "mechanism": "software_or_account_abuse",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 3,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "account_verification_request",
+        "request_money",
+        "request_money",
+        "promise_payout",
+        "advance_fee_condition",
+        "account_verification_request",
+        "request_login_approval",
+        "commercial_solicitation"
+      ],
+      "local_correct_intent": true,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "promise_payout",
+          "status": "rejected",
+          "reason": "insufficient_context"
+        },
+        {
+          "label": "advance_fee_condition",
+          "status": "tentative",
+          "reason": "value_or_dependency_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        },
+        {
+          "label": "commercial_solicitation",
+          "status": "rejected",
+          "reason": "insufficient_context"
+        }
+      ],
+      "hosts": [
+        {
+          "host": "ridicare-margele.test",
+          "registrable": "ridicare-margele.test",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 4573.65
+    },
+    {
+      "id": "RH-018",
+      "group": "personal_key_touch_for_current_login",
+      "truth": "benign",
+      "mechanism": "ordinary",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "consequential_action_unresolved"
+      },
+      "unresolved": 0,
+      "model_status": "timeout",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "not_compared",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 8010.95
+    },
+    {
+      "id": "RH-019",
+      "group": "email_app_password_to_third_party_importer",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "consequential_action_unresolved"
+      },
+      "unresolved": 0,
+      "model_status": "timeout",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "not_compared",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 8048.09
+    },
+    {
+      "id": "RH-020",
+      "group": "wholesale_returnable_crate_deposit",
+      "truth": "commercial",
+      "mechanism": "commercial",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4887.05
+    },
+    {
+      "id": "RH-021",
+      "group": "relative_redirects_recurring_rent_income",
+      "truth": "scam",
+      "mechanism": "family_impersonation",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "account_verification_request",
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4523.18
+    },
+    {
+      "id": "RH-022",
+      "group": "family_rejects_redirected_rent_instruction",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3705.91
+    },
+    {
+      "id": "RH-023",
+      "group": "fake_security_key_recall_bundles_factor_and_pin",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 54,
+      "risk_label": "suspicious",
+      "alert": true,
+      "risk_status": "estimated",
+      "risk_estimate": 54,
+      "assessment": "suspicious",
+      "confidence": "medium",
+      "predicted_mechanisms": [
+        "credential_harvesting"
+      ],
+      "mechanism_ids": [
+        "credential_disclosure"
+      ],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 4,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_credentials",
+        "request_sensitive_documents",
+        "account_verification_request",
+        "request_money",
+        "account_verification_request",
+        "request_login_approval"
+      ],
+      "local_correct_intent": true,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_credentials",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_sensitive_documents",
+          "status": "tentative",
+          "reason": "target_not_grounded"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        },
+        {
+          "label": "request_credentials",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3661.12
+    },
+    {
+      "id": "RH-024",
+      "group": "inventory_hiring_induction_fee",
+      "truth": "scam",
+      "mechanism": "advance_payment",
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "organization_impersonation_claim",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4375.06
+    },
+    {
+      "id": "RH-025",
+      "group": "carrier_forwarding_cleanup_with_quoted_command",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3088.26
+    },
+    {
+      "id": "RH-026",
+      "group": "carrier_support_all_call_forwarding",
+      "truth": "scam",
+      "mechanism": "software_or_account_abuse",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3173.32
+    },
+    {
+      "id": "RH-027",
+      "group": "repair_deposit_against_estimate",
+      "truth": "benign",
+      "mechanism": "normal_finance",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money",
+        "promise_payout"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "promise_payout",
+          "status": "rejected",
+          "reason": "insufficient_context"
+        },
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 3073.43
+    },
+    {
+      "id": "RH-028",
+      "group": "procurement_review_redirects_sensitive_supplier_files",
+      "truth": "scam",
+      "mechanism": "institutional_impersonation",
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 3692.85
+    },
+    {
+      "id": "RH-029",
+      "group": "production_package_registry_write_token",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_login_approval"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        },
+        {
+          "label": "request_credentials",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [
+        {
+          "host": "verificator-pachete.test",
+          "registrable": "verificator-pachete.test",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 5606.09
+    },
+    {
+      "id": "RH-030",
+      "group": "studio_open_class_presale",
+      "truth": "commercial",
+      "mechanism": "commercial",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [
+        {
+          "host": "sala-castan.example",
+          "registrable": "sala-castan.example",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 5107.02
+    },
+    {
+      "id": "RH-031",
+      "group": "library_reservation_pickup_barcode",
+      "truth": "benign",
+      "mechanism": "ordinary",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_credentials",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_credentials",
+          "status": "tentative",
+          "reason": "target_not_grounded"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 4314.59
+    },
+    {
+      "id": "RH-032",
+      "group": "instant_loan_private_kiosk_deposit",
+      "truth": "scam",
+      "mechanism": "advance_payment",
+      "expected": "critical",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_credentials"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "agreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "supported",
+          "reason": "scoped_context_corroborated"
+        },
+        {
+          "label": "request_credentials",
+          "status": "tentative",
+          "reason": "target_not_grounded"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        },
+        {
+          "label": "organization_impersonation_claim",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 5676.19
+    },
+    {
+      "id": "RH-033",
+      "group": "uncle_borrowed_phone_prepaid_topup",
+      "truth": "scam",
+      "mechanism": "family_impersonation",
+      "expected": "suspicious",
+      "credential": false,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 12,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "timeout",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "not_compared",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 8017.54
+    },
+    {
+      "id": "RH-034",
+      "group": "transit_premium_number_public_warning",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "limited_indicators",
+      "confidence": "medium",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [],
+      "hosts": [],
+      "request_ms": 3245.46
+    },
+    {
+      "id": "RH-035",
+      "group": "patient_portal_signin_with_canonical_name_in_fragment",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 70,
+      "risk_label": "critical",
+      "alert": true,
+      "risk_status": "estimated",
+      "risk_estimate": 70,
+      "assessment": "critical",
+      "confidence": "high",
+      "predicted_mechanisms": [
+        "credential_harvesting"
+      ],
+      "mechanism_ids": [
+        "credential_disclosure"
+      ],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [],
+      "local_correct_intent": false,
+      "rule_model_agreement": "no_shared_findings",
+      "reasons": [
+        {
+          "label": "request_credentials",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [
+        {
+          "host": "copie-analize.test",
+          "registrable": "copie-analize.test",
+          "protocol": "https",
+          "lookalike": null
+        }
+      ],
+      "request_ms": 7479.31
+    },
+    {
+      "id": "RH-036",
+      "group": "merchant_refund_to_original_payment_method",
+      "truth": "benign",
+      "mechanism": "normal_finance",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "request_money"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "payment_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 6509.81
+    },
+    {
+      "id": "RH-037",
+      "group": "work_portal_passwordless_code_relay",
+      "truth": "scam",
+      "mechanism": "credential_harvesting",
+      "expected": "critical",
+      "credential": true,
+      "protective": false,
+      "score": 12,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "unestimated",
+      "risk_estimate": null,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": true,
+        "requested": false,
+        "status": "not_configured",
+        "reason": "unresolved_high_impact_evidence"
+      },
+      "unresolved": 1,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "account_verification_request",
+        "request_login_approval"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "account_target_or_direction_unclear"
+        },
+        {
+          "label": "request_login_approval",
+          "status": "tentative",
+          "reason": "authorization_target_or_direction_unclear"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 7113.4
+    },
+    {
+      "id": "RH-038",
+      "group": "reported_exposed_code_then_local_remediation",
+      "truth": "benign",
+      "mechanism": "protective",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": true,
+      "score": 0,
+      "risk_label": "uncertain",
+      "alert": false,
+      "risk_status": "estimated",
+      "risk_estimate": 0,
+      "assessment": "inconclusive",
+      "confidence": "low",
+      "predicted_mechanisms": [],
+      "mechanism_ids": [],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_credentials",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_credentials",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 5282.8
+    },
+    {
+      "id": "RH-039",
+      "group": "routine_own_password_change_in_account_settings",
+      "truth": "benign",
+      "mechanism": "ordinary",
+      "expected": "uncertain",
+      "credential": false,
+      "protective": false,
+      "score": 70,
+      "risk_label": "critical",
+      "alert": true,
+      "risk_status": "estimated",
+      "risk_estimate": 70,
+      "assessment": "critical",
+      "confidence": "medium",
+      "predicted_mechanisms": [
+        "credential_harvesting"
+      ],
+      "mechanism_ids": [
+        "credential_disclosure"
+      ],
+      "gemini": {
+        "eligible": false,
+        "requested": false,
+        "status": "skipped",
+        "reason": null
+      },
+      "unresolved": 0,
+      "model_status": "completed",
+      "model_candidate_labels": [
+        "request_money",
+        "account_verification_request"
+      ],
+      "local_correct_intent": false,
+      "rule_model_agreement": "disagreement",
+      "reasons": [
+        {
+          "label": "request_money",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "account_verification_request",
+          "status": "contradictory",
+          "reason": "protected_or_reported_scope"
+        },
+        {
+          "label": "request_money",
+          "status": "tentative",
+          "reason": "model_entailment_ambiguous"
+        }
+      ],
+      "hosts": [],
+      "request_ms": 2670.09
+    }
+  ]
+}

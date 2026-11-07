@@ -1,0 +1,507 @@
+{
+ "A-visa-gpay": {
+  "reported": 40,
+  "reproductions": [
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": null,
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": null,
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": "Visa",
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": "Visa",
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": "Google Pay",
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": "Google Pay",
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   }
+  ],
+  "score_distribution": {
+   "0": 30,
+   "4": 12,
+   "38": 9,
+   "40": 6,
+   "50": 15
+  }
+ },
+ "B-fan-coordination": {
+  "reported": 40,
+  "reproductions": [
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": null,
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "call_req",
+    "sender": "FAN Courier",
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   }
+  ],
+  "score_distribution": {
+   "0": 8,
+   "4": 4,
+   "40": 2,
+   "50": 2
+  }
+ },
+ "C-orange-promo-1": {
+  "reported": 70,
+  "reproductions": [],
+  "score_distribution": {
+   "30": 24,
+   "40": 8,
+   "45": 4,
+   "50": 8,
+   "60": 8,
+   "65": 4,
+   "75": 8,
+   "80": 8
+  }
+ },
+ "D-cargus-pickup": {
+  "reported": 40,
+  "reproductions": [
+   {
+    "overall": "suspicious",
+    "requests": "click",
+    "sender": null,
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click",
+    "sender": null,
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click",
+    "sender": "Cargus",
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click",
+    "sender": "Cargus",
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click+pin_self",
+    "sender": null,
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click+pin_self",
+    "sender": null,
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click+pin_self",
+    "sender": "Cargus",
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click+pin_self",
+    "sender": "Cargus",
+    "tactics": "urgency",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   }
+  ],
+  "score_distribution": {
+   "4": 16,
+   "40": 8,
+   "50": 8,
+   "82": 16
+  }
+ },
+ "E-orange-promo-2": {
+  "reported": 75,
+  "reproductions": [
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "click",
+    "sender": "Orange",
+    "tactics": "none",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "click",
+    "sender": "Orange",
+    "tactics": "reward",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "click+pay",
+    "sender": "Orange",
+    "tactics": "none",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "click+pay",
+    "sender": "Orange",
+    "tactics": "reward",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "click",
+    "sender": "Orange",
+    "tactics": "none",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "click",
+    "sender": "Orange",
+    "tactics": "reward",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "click+pay",
+    "sender": "Orange",
+    "tactics": "none",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "click+pay",
+    "sender": "Orange",
+    "tactics": "reward",
+    "score": 75,
+    "label": "critical",
+    "decisive": "identity_conflict:75 (Mesajul invocă Orange, iar linkul imită domeniul acestei organizații.)",
+    "reinforcement": 0
+   }
+  ],
+  "score_distribution": {
+   "30": 16,
+   "40": 4,
+   "45": 4,
+   "50": 4,
+   "60": 4,
+   "75": 8,
+   "80": 8
+  }
+ },
+ "F-cargus-delivery": {
+  "reported": 40,
+  "reproductions": [
+   {
+    "overall": "suspicious",
+    "requests": "click",
+    "sender": null,
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "click",
+    "sender": "Cargus",
+    "tactics": "none",
+    "score": 40,
+    "label": "suspicious",
+    "decisive": "semantic_request:40 (Te îndeamnă să acționezi pe baza mesajului.)",
+    "reinforcement": 0
+   }
+  ],
+  "score_distribution": {
+   "4": 4,
+   "40": 2,
+   "50": 2,
+   "82": 8
+  }
+ },
+ "G-tursib-portal": {
+  "reported": 82,
+  "reproductions": [
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "ordinary_or_legitimate",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "marketing_or_spam",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "suspicious",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "likely_scam",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "likely_scam",
+    "requests": "login_secret",
+    "sender": null,
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "likely_scam",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "none",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   },
+   {
+    "overall": "likely_scam",
+    "requests": "login_secret",
+    "sender": "Tursib",
+    "tactics": "authority",
+    "score": 82,
+    "label": "critical",
+    "decisive": "semantic_request:82 (Cere direct ceva ce permite accesul la bani, conturi sau identitate.)",
+    "reinforcement": 0
+   }
+  ],
+  "score_distribution": {
+   "4": 8,
+   "8": 8,
+   "40": 8,
+   "50": 8,
+   "82": 16
+  }
+ }
+}

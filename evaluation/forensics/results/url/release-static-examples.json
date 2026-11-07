@@ -1,0 +1,678 @@
+{
+  "reviewed_catalog_match": {
+    "reports": [
+      {
+        "original_url": "https://www.emag.ro",
+        "final_url": "https://www.emag.ro",
+        "domain": "www.emag.ro",
+        "registrable_domain": "emag.ro",
+        "subdomain": "www",
+        "registered_domain_basis": "public_suffix_list",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".ro",
+        "typosquatting": {
+          "is_official": true,
+          "verified_match": true,
+          "is_typosquatting": false,
+          "target": "emag.ro",
+          "similarity": 100,
+          "brand": "eMAG",
+          "source": "verified_database",
+          "verification_source": "https://www.emag.ro/help/wp-content/uploads/2025/02/TERMENI-SI-CONDITII-SPECIALE-PRIVIND-Utilizarea-serviciului-PAYBYCLICK-si-PAY-ON-TIME.pdf",
+          "verified_at": "2026-11-06"
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [
+          "Gazda corespunde domeniului emag.ro din catalogul verificat. Expeditorul rămâne neverificat."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "eMAG",
+        "canonical_name": "eMAG",
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "reviewed_domains",
+        "reviewed_domains": [
+          "emag.ro"
+        ],
+        "destinations": [
+          {
+            "host": "www.emag.ro",
+            "registrable_domain": "emag.ro",
+            "status": "verified_domain_match"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "bare": {
+    "reports": [
+      {
+        "original_url": "status.firma-exemplu.ro",
+        "final_url": "status.firma-exemplu.ro",
+        "domain": "status.firma-exemplu.ro",
+        "registrable_domain": "firma-exemplu.ro",
+        "subdomain": "status",
+        "registered_domain_basis": "public_suffix_list",
+        "protocol": null,
+        "protocol_source": "unspecified",
+        "port": null,
+        "path": "/",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".ro",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": null,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [
+          "Textul nu specifică un protocol. Conexiunea nu a fost verificată."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [],
+    "external_reputation": "not_configured"
+  },
+  "userinfo": {
+    "reports": [
+      {
+        "original_url": "https://bcr.ro@verificare.test/acces",
+        "final_url": "https://bcr.ro@verificare.test/acces",
+        "domain": "verificare.test",
+        "registrable_domain": "verificare.test",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/acces",
+        "userinfo_present": true,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".test",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 35,
+        "flags": [
+          "Adresa conține informații înainte de @. Gazda interpretată este verificare.test."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "Link de verificare",
+        "canonical_name": null,
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "unknown_brand",
+        "reviewed_domains": [],
+        "destinations": [
+          {
+            "host": "verificare.test",
+            "registrable_domain": "verificare.test",
+            "status": "verification_incomplete"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "unknown": {
+    "reports": [
+      {
+        "original_url": "https://plati.test/identitate",
+        "final_url": "https://plati.test/identitate",
+        "domain": "plati.test",
+        "registrable_domain": "plati.test",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/identitate",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".test",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "VelaNova",
+        "canonical_name": null,
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "unknown_brand",
+        "reviewed_domains": [],
+        "destinations": [
+          {
+            "host": "plati.test",
+            "registrable_domain": "plati.test",
+            "status": "verification_incomplete"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "encoded_destination": {
+    "reports": [
+      {
+        "original_url": "https://serviciu.test/?next=https%3A%2F%2Fclient.example",
+        "final_url": "https://serviciu.test/?next=https%3A%2F%2Fclient.example",
+        "domain": "serviciu.test",
+        "registrable_domain": "serviciu.test",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": true,
+        "fragment_present": false,
+        "embedded_destination_hint": true,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".test",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [
+          "Adresa conține o altă adresă în cale sau parametri. Redirecționarea rămâne neverificată."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "Detalii",
+        "canonical_name": null,
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "unknown_brand",
+        "reviewed_domains": [],
+        "destinations": [
+          {
+            "host": "serviciu.test",
+            "registrable_domain": "serviciu.test",
+            "status": "verification_incomplete"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "invalid": {
+    "reports": [
+      {
+        "original_url": "https://[bad",
+        "final_url": "https://[bad",
+        "domain": "",
+        "registrable_domain": null,
+        "subdomain": null,
+        "registered_domain_basis": "unavailable",
+        "protocol": null,
+        "protocol_source": "unspecified",
+        "port": null,
+        "path": null,
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": "",
+        "typosquatting": {},
+        "domain_age_days": null,
+        "has_https": null,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "invalid_url",
+        "risk_points": 0,
+        "flags": [
+          "Linkul nu a putut fi interpretat. Destinația rămâne neverificată."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "Verifică https",
+        "canonical_name": null,
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "unknown_brand",
+        "reviewed_domains": [],
+        "destinations": [
+          {
+            "host": "",
+            "registrable_domain": null,
+            "status": "unparsed"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "psl_private": {
+    "reports": [
+      {
+        "original_url": "https://sub.cont-test.github.io/cale",
+        "final_url": "https://sub.cont-test.github.io/cale",
+        "domain": "sub.cont-test.github.io",
+        "registrable_domain": "cont-test.github.io",
+        "subdomain": "sub",
+        "registered_domain_basis": "public_suffix_list",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/cale",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".github.io",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "Detalii https",
+        "canonical_name": null,
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "unknown_brand",
+        "reviewed_domains": [],
+        "destinations": [
+          {
+            "host": "sub.cont-test.github.io",
+            "registrable_domain": "cont-test.github.io",
+            "status": "verification_incomplete"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "short_transposition_control": {
+    "reports": [
+      {
+        "original_url": "https://emga.example/cont",
+        "final_url": "https://emga.example/cont",
+        "domain": "emga.example",
+        "registrable_domain": "emga.example",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/cont",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".example",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "eMAG",
+        "canonical_name": "eMAG",
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "reviewed_domains",
+        "reviewed_domains": [
+          "emag.ro"
+        ],
+        "destinations": [
+          {
+            "host": "emga.example",
+            "registrable_domain": "emga.example",
+            "status": "outside_reviewed_domains"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "long_label_transposition": {
+    "reports": [
+      {
+        "original_url": "https://samedya.example/cont",
+        "final_url": "https://samedya.example/cont",
+        "domain": "samedya.example",
+        "registrable_domain": "samedya.example",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/cont",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".example",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": true,
+          "target": "sameday.ro",
+          "similarity": 86,
+          "brand": "Sameday",
+          "points": 38,
+          "method": "adjacent_transposition",
+          "source": "verified_database",
+          "verification_source": "https://sameday.ro/",
+          "verified_at": "2026-11-06",
+          "reason": "Adresa seamănă cu sameday.ro și se află în afara acelui domeniu."
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 38,
+        "flags": [
+          "Adresa seamănă cu sameday.ro și se află în afara acelui domeniu."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "Sameday",
+        "canonical_name": "Sameday",
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "reviewed_domains",
+        "reviewed_domains": [
+          "sameday.ro"
+        ],
+        "destinations": [
+          {
+            "host": "samedya.example",
+            "registrable_domain": "samedya.example",
+            "status": "lookalike_outside_catalog"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  },
+  "defanged": {
+    "reports": [
+      {
+        "original_url": "hxxps://cont-exemplu[.]test/form",
+        "final_url": "hxxps://cont-exemplu[.]test/form",
+        "domain": "cont-exemplu.test",
+        "registrable_domain": "cont-exemplu.test",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "defanged",
+        "port": null,
+        "path": "/form",
+        "userinfo_present": false,
+        "defanged": true,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".test",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": false,
+          "target": null,
+          "similarity": 0
+        },
+        "domain_age_days": null,
+        "has_https": null,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 0,
+        "flags": [
+          "Adresa era scrisă în formă mascată. Normalizarea a fost folosită pentru interpretare."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [],
+    "external_reputation": "not_configured"
+  },
+  "unicode_confusable": {
+    "reports": [
+      {
+        "original_url": "https://samеday.example/cont",
+        "final_url": "https://samеday.example/cont",
+        "domain": "xn--samday-5of.example",
+        "registrable_domain": "xn--samday-5of.example",
+        "subdomain": null,
+        "registered_domain_basis": "reserved_suffix",
+        "protocol": "https",
+        "protocol_source": "explicit",
+        "port": null,
+        "path": "/cont",
+        "userinfo_present": false,
+        "defanged": false,
+        "query_present": false,
+        "fragment_present": false,
+        "embedded_destination_hint": false,
+        "redirect_count": null,
+        "is_shortened": false,
+        "suspicious_tld": false,
+        "tld": ".example",
+        "typosquatting": {
+          "is_official": false,
+          "verified_match": false,
+          "is_typosquatting": true,
+          "target": "sameday.ro",
+          "similarity": 96,
+          "brand": "Sameday",
+          "points": 45,
+          "method": "confusable_or_leetspeak",
+          "source": "verified_database",
+          "verification_source": "https://sameday.ro/",
+          "verified_at": "2026-11-06",
+          "reason": "Adresa seamănă cu sameday.ro și se află în afara acelui domeniu."
+        },
+        "domain_age_days": null,
+        "has_https": true,
+        "has_login_or_card_form": null,
+        "page_title": null,
+        "inspection_status": "passive_only",
+        "risk_points": 45,
+        "flags": [
+          "Adresa seamănă cu sameday.ro și se află în afara acelui domeniu.",
+          "Nume internaționalizat (IDNA). Unele caractere pot semăna între ele."
+        ],
+        "reputation": {
+          "provider": "google_web_risk",
+          "status": "not_configured"
+        }
+      }
+    ],
+    "domain_assessment": [
+      {
+        "claim": "Sameday",
+        "canonical_name": "Sameday",
+        "source": "message_claim",
+        "identity_status": "unverified",
+        "catalog_status": "reviewed_domains",
+        "reviewed_domains": [
+          "sameday.ro"
+        ],
+        "destinations": [
+          {
+            "host": "xn--samday-5of.example",
+            "registrable_domain": "xn--samday-5of.example",
+            "status": "lookalike_outside_catalog"
+          }
+        ]
+      }
+    ],
+    "external_reputation": "not_configured"
+  }
+}

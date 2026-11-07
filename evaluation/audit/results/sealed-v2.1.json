@@ -1,0 +1,502 @@
+{
+ "tag": "v2.1-sealed",
+ "note": "MOCKED semantic layer; deterministic layers are real.",
+ "modes": {
+  "faithful": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "seven_scores": {}
+  },
+  "over_suspicious": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "seven_scores": {}
+  },
+  "direction_errors": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     13
+    ],
+    "benign_false_alerts": [
+     1,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     1,
+     12
+    ],
+    "inconclusive": [
+     1,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "S11:82"
+    ]
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     13
+    ],
+    "benign_false_alerts": [
+     1,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     1,
+     12
+    ],
+    "inconclusive": [
+     1,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "S11:82"
+    ]
+   },
+   "seven_scores": {}
+  },
+  "under_suspicious": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "seven_scores": {}
+  },
+  "handover_lenient": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "seven_scores": {}
+  },
+  "ungrounded": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     3,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     3,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "seven_scores": {}
+  },
+  "reading_only": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     1,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     12
+    ],
+    "benign_false_alerts": [
+     0,
+     12
+    ],
+    "critical_credential_recall": [
+     1,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     0,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": []
+   },
+   "seven_scores": {}
+  },
+  "over_scam": {
+   "holdouts_combined": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     13
+    ],
+    "benign_false_alerts": [
+     1,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     10,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "S09:40"
+    ]
+   },
+   "sealed": {
+    "cases": 24,
+    "scam_recall": [
+     12,
+     12
+    ],
+    "precision": [
+     12,
+     13
+    ],
+    "benign_false_alerts": [
+     1,
+     12
+    ],
+    "critical_credential_recall": [
+     4,
+     4
+    ],
+    "benign_critical": [
+     0,
+     12
+    ],
+    "inconclusive": [
+     10,
+     24
+    ],
+    "missed_scams": [],
+    "false_alerts": [
+     "S09:40"
+    ]
+   },
+   "seven_scores": {}
+  }
+ }
+}
